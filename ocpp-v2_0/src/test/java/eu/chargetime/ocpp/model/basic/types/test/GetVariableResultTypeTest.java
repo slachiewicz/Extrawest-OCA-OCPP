@@ -28,7 +28,10 @@ package eu.chargetime.ocpp.model.basic.types.test;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import eu.chargetime.ocpp.model.basic.types.*;
+import eu.chargetime.ocpp.model.dataTypes.ComponentType;
+import eu.chargetime.ocpp.model.dataTypes.GetVariableResultType;
+import eu.chargetime.ocpp.model.dataTypes.enums.GetVariableStatusEnumType;
+import eu.chargetime.ocpp.model.dataTypes.VariableType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -48,7 +51,7 @@ public class GetVariableResultTypeTest {
   public void validate_requiredSetAndStatusNotAccepted_returnTrue() {
     boolean expected = true;
     GetVariableResultType sut = createSut();
-    sut.setAttributeStatus(GetVariableStatusEnumType.Rejected);
+    sut.setAttributeStatus(GetVariableStatusEnumType.REJECTED);
 
     boolean result = sut.validate();
 
@@ -59,7 +62,7 @@ public class GetVariableResultTypeTest {
   public void validate_StatusAcceptedValueNull_returnFalse() {
     boolean expected = false;
     GetVariableResultType sut = createSut();
-    sut.setAttributeStatus(GetVariableStatusEnumType.Accepted);
+    sut.setAttributeStatus(GetVariableStatusEnumType.ACCEPTED);
 
     boolean result = sut.validate();
 
@@ -70,7 +73,7 @@ public class GetVariableResultTypeTest {
   public void validate_StatusAcceptedValueSet_returnTrue() {
     boolean expected = true;
     GetVariableResultType sut = createSut();
-    sut.setAttributeStatus(GetVariableStatusEnumType.Accepted);
+    sut.setAttributeStatus(GetVariableStatusEnumType.ACCEPTED);
     sut.setAttributeValue("Some value");
 
     boolean result = sut.validate();

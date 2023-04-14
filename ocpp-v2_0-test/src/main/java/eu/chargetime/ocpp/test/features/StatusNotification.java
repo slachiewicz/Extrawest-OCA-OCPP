@@ -26,39 +26,39 @@ package eu.chargetime.ocpp.test.features;
 */
 
 import eu.chargetime.ocpp.feature.Feature;
-import eu.chargetime.ocpp.features.basic.StatusNotificationFeature;
-import eu.chargetime.ocpp.features.basic.handlers.IServerStatusNotificationRequestHandler;
-import eu.chargetime.ocpp.model.basic.StatusNotificationConfirmation;
-import eu.chargetime.ocpp.model.basic.StatusNotificationRequest;
-import eu.chargetime.ocpp.model.basic.types.ConnectorStatusEnumType;
+import eu.chargetime.ocpp.features.StatusNotificationFeature;
+import eu.chargetime.ocpp.features.handlers.server.IServerStatusNotificationRequestHandler;
+import eu.chargetime.ocpp.model.response.StatusNotificationResponse;
+import eu.chargetime.ocpp.model.request.StatusNotificationRequest;
+import eu.chargetime.ocpp.model.dataTypes.enums.ConnectorStatusEnumType;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
 public class StatusNotification implements IServerStatusNotificationRequestHandler {
 
   private StatusNotificationFeature feature;
-  private StatusNotificationConfirmation confirmation;
+  private StatusNotificationResponse confirmation;
 
   public StatusNotification() {
     feature = new StatusNotificationFeature(this);
 
-    confirmation = new StatusNotificationConfirmation();
+    confirmation = new StatusNotificationResponse();
   }
 
   @Override
-  public StatusNotificationConfirmation handleStatusNotificationRequest(
+  public StatusNotificationResponse handleStatusNotificationRequest(
       UUID sessionIndex, StatusNotificationRequest request) {
     return confirmation;
   }
 
-  public StatusNotificationConfirmation getConfirmation() {
+  public StatusNotificationResponse getConfirmation() {
     return confirmation;
   }
 
   public StatusNotificationRequest createRequest() {
     StatusNotificationRequest request = new StatusNotificationRequest();
     request.setTimestamp(ZonedDateTime.now());
-    request.setConnectorStatus(ConnectorStatusEnumType.Available);
+    request.setConnectorStatus(ConnectorStatusEnumType.AVAILABLE);
     request.setEvseId(1);
     request.setConnectorId(1);
     return request;
