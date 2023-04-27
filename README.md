@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/ChargeTimeEU/Java-OCA-OCPP/actions/workflows/maven.yml/badge.svg)](https://github.com/ChargeTimeEU/Java-OCA-OCPP/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/extrawest/Extrawest-OCA-OCPP/actions/workflows/maven.yml/badge.svg)](https://github.com/extrawest/Extrawest-OCA-OCPP/actions/workflows/maven.yml)
 [![codecov](https://codecov.io/gh/ChargeTimeEU/Java-OCA-OCPP/branch/master/graph/badge.svg)](https://codecov.io/gh/ChargeTimeEU/Java-OCA-OCPP)
 [![Gitter](https://badges.gitter.im/ChargeTimeEU/Java-OCA-OCPP.svg)](https://gitter.im/ChargeTimeEU/Java-OCA-OCPP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -12,13 +12,11 @@ The design is driven by test, which will ensure premium software that is easy to
 
 Please note, this is a library and not an application, so there is no main method. 
 
-Currently we support 1.6 SOAP or Web socket.
+Currently we support 1.6 SOAP or Web socket and 2.0.1 Web socket versions.
 
-Incoming request events are split into feature profiles as described in the OCPP specification.
+At 1.6 version incoming request events are split into feature profiles as described in the OCPP specification. At 2.0.1 ypu can choose what kind of events will be supported by Central System or Charging Client.
 I recommend that you download and read the specification from openchargealliance.org
 
-See the project plan here:
-    https://tree.taiga.io/project/tvolden-java-oca-ocpp/
 
 !! If you have an implementation for 0.4 or earlier, please read:  
 https://github.com/ChargeTimeEU/Java-OCA-OCPP/wiki/External-interface-change-from-version-0.4-to-0.5
@@ -49,7 +47,7 @@ License
 
 [MIT License](LICENSE)
 
-About ChargeTime.eu
+About Extrawest.com
 =======
 
 We are devoted to push the marked for vehicles charging forward.
@@ -57,4 +55,4 @@ There are many standards out there, we intend to implement and share them. Any h
 
 The market is in its defining state, the practices and standards we come up with now, may very well stick around for decades to come.
 
-See our vision at http://www.chargetime.eu/
+See our vision at https://www.extrawest.com/
