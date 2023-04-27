@@ -60,7 +60,7 @@ public class RequestStartTransactionRequest extends RequestWithId {
     @JsonProperty("idToken")
     public IdTokenType idToken;
     /**
-     * Id given by the server to this start request. The Charging Station might return this in the &lt;<transactioneventrequest, TransactionEventRequest>>, letting the server know which transaction was started for this request. Use to start a transaction.
+     * Id given by the server to this start request. The Charging Station might return this in the TransactionEventRequest, letting the server know which transaction was started for this request. Use to start a transaction.
      *
      * (Required)
      *

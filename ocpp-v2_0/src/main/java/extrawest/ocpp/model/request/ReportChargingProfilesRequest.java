@@ -40,7 +40,7 @@ public class ReportChargingProfilesRequest extends RequestWithId {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * Id used to match the &lt;<getchargingprofilesrequest, GetChargingProfilesRequest>> message with the resulting ReportChargingProfilesRequest messages. When the CSMS provided a requestId in the <<getchargingprofilesrequest, GetChargingProfilesRequest>>, this field SHALL contain the same value.
+     * Id used to match the GetChargingProfilesRequest message with the resulting ReportChargingProfilesRequest messages. When the CSMS provided a requestId in the GetChargingProfilesRequest, this field SHALL contain the same value.
      *
      * (Required)
      *

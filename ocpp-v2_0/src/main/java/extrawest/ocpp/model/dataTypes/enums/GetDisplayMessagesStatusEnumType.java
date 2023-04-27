@@ -7,7 +7,7 @@ import static extrawest.ocpp.util.EnumUtil.findByField;
 
 
 /**
- * Indicates if the Charging Station has Display Messages that match the request criteria in the &lt;<getdisplaymessagesrequest,GetDisplayMessagesRequest>>
+ * Indicates if the Charging Station has Display Messages that match the request criteria in the GetDisplayMessagesRequest,GetDisplayMessagesRequest>>
  *
  *
  */

@@ -58,7 +58,7 @@ public class ChargingProfileCriterionType implements Validatable {
     @JsonProperty("stackLevel")
     public Integer stackLevel;
     /**
-     * List of all the chargingProfileIds requested. Any ChargingProfile that matches one of these profiles will be reported. If omitted, the Charging Station SHALL not filter on chargingProfileId. This field SHALL NOT contain more ids than set in &lt;<configkey-charging-profile-entries,ChargingProfileEntries.maxLimit>>
+     * List of all the chargingProfileIds requested. Any ChargingProfile that matches one of these profiles will be reported. If omitted, the Charging Station SHALL not filter on chargingProfileId. This field SHALL NOT contain more ids than set in config-key-charging-profile-entries,ChargingProfileEntries.maxLimit>>
      *
      *
      *

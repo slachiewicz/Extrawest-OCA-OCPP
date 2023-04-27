@@ -17,7 +17,6 @@ import java.util.List;
 /**
  * Sales_ Tariff
  * urn:x-oca:ocpp:uid:2:233272
- * NOTE: This dataType is based on dataTypes from &lt;<ref-ISOIEC15118-2,ISO 15118-2>>.
  *
  *
  */

@@ -35,7 +35,7 @@ public class GetChargingProfilesRequest extends RequestWithId {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * Reference identification that is to be used by the Charging Station in the &lt;<reportchargingprofilesrequest, ReportChargingProfilesRequest>> when provided.
+     * Reference identification that is to be used by the Charging Station in the ReportChargingProfilesRequest when provided.
      *
      * (Required)
      *

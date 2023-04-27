@@ -35,7 +35,7 @@ public class GetChargingProfilesResponse extends Confirmation {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * This indicates whether the Charging Station is able to process this request and will send &lt;<reportchargingprofilesrequest, ReportChargingProfilesRequest>> messages.
+     * This indicates whether the Charging Station is able to process this request and will send ReportChargingProfilesRequest messages.
      *
      * (Required)
      *

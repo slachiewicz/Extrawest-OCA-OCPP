@@ -42,7 +42,7 @@ public class CostUpdatedRequest extends RequestWithId {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * Current total cost, based on the information known by the CSMS, of the transaction including taxes. In the currency configured with the configuration Variable: [&lt;<configkey-currency, Currency>>]
+     * Current total cost, based on the information known by the CSMS, of the transaction including taxes. In the currency configured with the configuration Variable: [config-key-currency, Currency>>]
      *
      *
      * (Required)

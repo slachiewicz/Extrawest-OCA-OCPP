@@ -55,7 +55,7 @@ public class VariableAttributeType implements Validatable {
     /**
      * Value of the attribute. May only be omitted when mutability is set to 'WriteOnly'.
      *
-     * The Configuration Variable &lt;<configkey-reporting-value-size,ReportingValueSize>> can be used to limit GetVariableResult.attributeValue, VariableAttribute.value and EventData.actualValue. The max size of these values will always remain equal.
+     * The Configuration Variable ReportingValueSize can be used to limit GetVariableResult.attributeValue, VariableAttribute.value and EventData.actualValue. The max size of these values will always remain equal.
      *
      *
      */

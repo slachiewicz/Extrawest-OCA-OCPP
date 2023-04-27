@@ -58,7 +58,7 @@ public class GetCertificateStatusResponse extends Confirmation {
     @JsonProperty("statusInfo")
     public StatusInfoType statusInfo;
     /**
-     * OCSPResponse class as defined in &lt;<ref-ocpp_security_24, IETF RFC 6960>>. DER encoded (as defined in <<ref-ocpp_security_24, IETF RFC 6960>>), and then base64 encoded. MAY only be omitted when status is not Accepted.
+     * OCSPResponse class as defined in ref-ocpp_security_24, IETF RFC 6960>. DER encoded (as defined in IETF RFC 6960), and then base64 encoded. MAY only be omitted when status is not Accepted.
      *
      *
      */

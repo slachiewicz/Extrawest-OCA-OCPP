@@ -39,7 +39,7 @@ public class NotifyDisplayMessagesRequest extends RequestWithId {
     @JsonProperty("messageInfo")
     public List<MessageInfoType> messageInfo;
     /**
-     * The id of the &lt;<getdisplaymessagesrequest,GetDisplayMessagesRequest>> that requested this message.
+     * The id of the GetDisplayMessagesRequest that requested this message.
      *
      * (Required)
      *

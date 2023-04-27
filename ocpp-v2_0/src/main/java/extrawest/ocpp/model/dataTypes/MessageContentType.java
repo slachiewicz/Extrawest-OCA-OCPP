@@ -63,7 +63,7 @@ public class MessageContentType implements Validatable {
     /**
      * Message_ Content. Language. Language_ Code
      * urn:x-enexis:ecdm:uid:1:570849
-     * Message language identifier. Contains a language code as defined in &lt;<ref-RFC5646,[RFC5646]>>.
+     * Message language identifier. Contains a language code as defined in RFC5646.
      *
      *
      */

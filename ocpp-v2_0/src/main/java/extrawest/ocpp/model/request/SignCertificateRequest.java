@@ -39,7 +39,7 @@ public class SignCertificateRequest extends RequestWithId {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * The Charging Station SHALL send the public key in form of a Certificate Signing Request (CSR) as described in RFC 2986 [22] and then PEM encoded, using the &lt;<signcertificaterequest,SignCertificateRequest>> message.
+     * The Charging Station SHALL send the public key in form of a Certificate Signing Request (CSR) as described in RFC 2986 [22] and then PEM encoded, using the SignCertificateRequest message.
      *
      * (Required)
      *

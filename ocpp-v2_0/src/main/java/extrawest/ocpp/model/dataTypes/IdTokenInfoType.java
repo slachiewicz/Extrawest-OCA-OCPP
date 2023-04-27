@@ -74,7 +74,7 @@ public class IdTokenInfoType implements Validatable {
     @JsonProperty("cacheExpiryDateTime")
     public LocalDateTime cacheExpiryDateTime;
     /**
-     * Priority from a business point of view. Default priority is 0, The range is from -9 to 9. Higher values indicate a higher priority. The chargingPriority in &lt;<transactioneventresponse,TransactionEventResponse>> overrules this one.
+     * Priority from a business point of view. Default priority is 0, The range is from -9 to 9. Higher values indicate a higher priority. The chargingPriority in TransactionEventResponse overrules this one.
      *
      *
      */
@@ -83,7 +83,7 @@ public class IdTokenInfoType implements Validatable {
     /**
      * ID_ Token. Language1. Language_ Code
      * urn:x-oca:ocpp:uid:1:569374
-     * Preferred user interface language of identifier user. Contains a language code as defined in &lt;<ref-RFC5646,[RFC5646]>>.
+     * Preferred user interface language of identifier user. Contains a language code as defined in RFC5646.
      *
      *
      *
@@ -108,7 +108,7 @@ public class IdTokenInfoType implements Validatable {
     /**
      * ID_ Token. Language2. Language_ Code
      * urn:x-oca:ocpp:uid:1:569375
-     * Second preferred user interface language of identifier user. Don’t use when language1 is omitted, has to be different from language1. Contains a language code as defined in &lt;<ref-RFC5646,[RFC5646]>>.
+     * Second preferred user interface language of identifier user. Don’t use when language1 is omitted, has to be different from language1. Contains a language code as defined in RFC5646.
      *
      *
      */

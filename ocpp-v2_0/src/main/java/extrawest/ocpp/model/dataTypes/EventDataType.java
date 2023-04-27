@@ -113,7 +113,7 @@ public class EventDataType implements Validatable {
     /**
      * Actual value (_attributeType_ Actual) of the variable.
      *
-     * The Configuration Variable &lt;<configkey-reporting-value-size,ReportingValueSize>> can be used to limit GetVariableResult.attributeValue, VariableAttribute.value and EventData.actualValue. The max size of these values will always remain equal.
+     * The Configuration Variable config-key-reporting-value-size,ReportingValueSize> can be used to limit GetVariableResult.attributeValue, VariableAttribute.value and EventData.actualValue. The max size of these values will always remain equal.
      *
      *
      * (Required)

@@ -90,7 +90,7 @@ public class VariableCharacteristicsType implements Validatable {
      *
      * This is a comma separated list.
      *
-     * The Configuration Variable &lt;<configkey-configuration-value-size,ConfigurationValueSize>> can be used to limit SetVariableData.attributeValue and VariableCharacteristics.valueList. The max size of these values will always remain equal.
+     * The Configuration Variable ConfigurationValueSize can be used to limit SetVariableData.attributeValue and VariableCharacteristics.valueList. The max size of these values will always remain equal.
      *
      *
      *

@@ -86,7 +86,7 @@ public class TransactionType implements Validatable {
     @JsonProperty("stoppedReason")
     public ReasonEnumType stoppedReason;
     /**
-     * The ID given to remote start request (&lt;<requeststarttransactionrequest, RequestStartTransactionRequest>>. This enables to CSMS to match the started transaction to the given start request.
+     * The ID given to remote start request RequestStartTransactionRequest. This enables to CSMS to match the started transaction to the given start request.
      *
      *
      */

@@ -7,7 +7,7 @@ import static extrawest.ocpp.util.EnumUtil.findByField;
 
 
 /**
- * This indicates whether the Charging Station is able to process this request and will send &lt;<reportchargingprofilesrequest, ReportChargingProfilesRequest>> messages.
+ * This indicates whether the Charging Station is able to process this request and will send reportChargingProfilesRequest, ReportChargingProfilesRequest>> messages.
  *
  *
  */

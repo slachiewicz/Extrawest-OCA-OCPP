@@ -39,7 +39,7 @@ public class GetDisplayMessagesRequest extends RequestWithId {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * If provided the Charging Station shall return Display Messages of the given ids. This field SHALL NOT contain more ids than set in &lt;<configkey-number-of-display-messages,NumberOfDisplayMessages.maxLimit>>
+     * If provided the Charging Station shall return Display Messages of the given ids. This field SHALL NOT contain more ids than set in NumberOfDisplayMessages.maxLimit
      *
      *
      *

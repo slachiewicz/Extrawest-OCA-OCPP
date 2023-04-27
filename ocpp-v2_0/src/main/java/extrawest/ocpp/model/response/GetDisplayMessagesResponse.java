@@ -35,7 +35,7 @@ public class GetDisplayMessagesResponse extends Confirmation {
     @JsonProperty("customData")
     public CustomDataType customData;
     /**
-     * Indicates if the Charging Station has Display Messages that match the request criteria in the &lt;<getdisplaymessagesrequest,GetDisplayMessagesRequest>>
+     * Indicates if the Charging Station has Display Messages that match the request criteria in the GetDisplayMessagesRequest
      *
      * (Required)
      *
