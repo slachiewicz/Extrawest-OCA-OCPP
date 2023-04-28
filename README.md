@@ -20,17 +20,9 @@ I recommend that you download and read the specification from openchargealliance
 
 1.6 Server Realization
 =====
-For realization 1.6 OCPP JsonServer you need next:
+For realization 1.6 OCPP JsonServer you need next classes:
 
 ``` Java
-package eu.chargetime.ocpp.jsonserverimplementation.config;
-
-import eu.chargetime.ocpp.JSONServer;
-import eu.chargetime.ocpp.feature.profile.ServerCoreProfile;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 @Configuration
 @Slf4j
 public class JsonServerConfig {
@@ -43,19 +35,7 @@ public class JsonServerConfig {
 }
 ```
 
-```
-package eu.chargetime.ocpp.jsonserverimplementation.config;
-
-import eu.chargetime.ocpp.feature.profile.ServerCoreEventHandler;
-import eu.chargetime.ocpp.feature.profile.ServerCoreProfile;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import java.time.ZonedDateTime;
-import java.util.UUID;
-
+``` Java
 @Configuration
 @Getter
 @Slf4j
@@ -149,18 +129,7 @@ public class ServerCoreProfileConfig {
 }
 ```
 
-```
-package eu.chargetime.ocpp.jsonserverimplementation.config;
-
-import eu.chargetime.ocpp.ServerEvents;
-import eu.chargetime.ocpp.model.SessionInformation;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import java.util.UUID;
-
+``` Java
 @Configuration
 @Getter
 @Slf4j
@@ -191,14 +160,7 @@ public class ServerEventConfig {
 }
 ```
 
-```
-package eu.chargetime.ocpp.jsonserverimplementation.config;
-
-import lombok.Getter;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-
+``` Java
 @Configuration
 @EnableConfigurationProperties
 @Getter
@@ -209,18 +171,7 @@ public class ApplicationConfiguration {
 }
 ```
 
-```
-package eu.chargetime.ocpp.jsonserverimplementation.server;
-
-import eu.chargetime.ocpp.JSONServer;
-import eu.chargetime.ocpp.ServerEvents;
-import eu.chargetime.ocpp.jsonserverimplementation.config.ApplicationConfiguration;
-import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-
+``` Java
 @Slf4j
 @Component
 @AllArgsConstructor
@@ -233,6 +184,157 @@ public class JsonServerImpl {
     @PostConstruct
     public void startServer() throws Exception {
         server.open("localhost", applicationConfiguration.getServerPort(), serverEvents);
+    }
+}
+```
+
+For realization 1.6 OCPP JsonClient you need next classes:
+
+``` Java
+@Configuration
+@Slf4j
+public class JsonClientConfig {
+
+    @Bean
+    public JSONClient configureJsonClient(ClientCoreProfile core) {
+        return new JSONClient(core);
+    }
+}
+```
+
+```Java
+@Configuration
+@Slf4j
+public class ClientCoreProfileConfig {
+
+    @Bean
+    public ClientCoreProfile configureClientCoreProfile(ClientCoreEventHandler clientCoreEventHandler) {
+        return new ClientCoreProfile(clientCoreEventHandler);
+    }
+}
+```
+
+``` Java
+@Configuration
+@Slf4j
+public class ClientCoreEventHandlerConfig {
+
+    @Bean
+    public ClientCoreEventHandler configTestClient() {
+        return new ClientCoreEventHandler() {
+            @Override
+            public ChangeAvailabilityConfirmation handleChangeAvailabilityRequest(ChangeAvailabilityRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return new ChangeAvailabilityConfirmation(AvailabilityStatus.Accepted);
+            }
+
+            @Override
+            public GetConfigurationConfirmation handleGetConfigurationRequest(GetConfigurationRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public ChangeConfigurationConfirmation handleChangeConfigurationRequest(ChangeConfigurationRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public ClearCacheConfirmation handleClearCacheRequest(ClearCacheRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public DataTransferConfirmation handleDataTransferRequest(DataTransferRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public RemoteStartTransactionConfirmation handleRemoteStartTransactionRequest(RemoteStartTransactionRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public RemoteStopTransactionConfirmation handleRemoteStopTransactionRequest(RemoteStopTransactionRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public ResetConfirmation handleResetRequest(ResetRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public UnlockConnectorConfirmation handleUnlockConnectorRequest(UnlockConnectorRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+        };
+    }
+}
+```
+
+```Java
+public class OCPPHandlerTest {
+
+    @Autowired
+    private JSONClient jsonClient;
+
+    @Autowired
+    private ClientCoreProfile clientCoreProfile;
+
+    @Autowired
+    private ApiConfigurations apiConfigurations;
+
+    @PostConstract
+    public void testOCPPAuthorizeHandler() {
+        String url = "ws://" + apiConfigurations.getWebSocketBaseUrl();
+        AuthorizeRequest testRequest = clientCoreProfile.createAuthorizeRequest("testId");
+        jsonClient.connect(url, null);
+        try {
+            AuthorizeConfirmation authorizeConfirmation = (AuthorizeConfirmation) jsonClient.send(testRequest)
+                    .toCompletableFuture().get();
+            assertTrue(true);
+            assertEquals(AuthorizationStatus.Accepted,authorizeConfirmation.getIdTagInfo().getStatus());
+        } catch (OccurenceConstraintException | UnsupportedFeatureException
+                | ExecutionException | InterruptedException e) {
+            log.error("Exception occurred: " + e);
+            log.error("Test will fail");
+            assertTrue(false);
+        }
     }
 }
 ```
