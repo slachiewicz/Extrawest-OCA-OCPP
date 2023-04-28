@@ -18,8 +18,224 @@ At 1.6 version incoming request events are split into feature profiles as descri
 I recommend that you download and read the specification from openchargealliance.org
 
 
-!! If you have an implementation for 0.4 or earlier, please read:  
-https://github.com/ChargeTimeEU/Java-OCA-OCPP/wiki/External-interface-change-from-version-0.4-to-0.5
+1.6 Server Realization
+=====
+For realization 1.6 OCPP JsonServer you need next:
+
+```
+package eu.chargetime.ocpp.jsonserverimplementation.config;
+
+import eu.chargetime.ocpp.JSONServer;
+import eu.chargetime.ocpp.feature.profile.ServerCoreProfile;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@Slf4j
+public class JsonServerConfig {
+
+    @Bean
+    public JSONServer jsonServer(ServerCoreProfile core) {
+        return new JSONServer(core);
+    }
+
+}
+```
+
+```
+package eu.chargetime.ocpp.jsonserverimplementation.config;
+
+import eu.chargetime.ocpp.feature.profile.ServerCoreEventHandler;
+import eu.chargetime.ocpp.feature.profile.ServerCoreProfile;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.time.ZonedDateTime;
+import java.util.UUID;
+
+@Configuration
+@Getter
+@Slf4j
+public class ServerCoreProfileConfig {
+
+    @Bean
+    public ServerCoreEventHandler getCoreEventHandler() {
+        return new ServerCoreEventHandler() {
+            @Override
+            public AuthorizeConfirmation handleAuthorizeRequest(UUID sessionIndex, AuthorizeRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+                IdTagInfo idTagInfo = new IdTagInfo();
+                idTagInfo.setExpiryDate(ZonedDateTime.now());
+                idTagInfo.setParentIdTag("test");
+                idTagInfo.setStatus(AuthorizationStatus.Accepted);
+
+                return new AuthorizeConfirmation(idTagInfo);
+            }
+
+            @Override
+            public BootNotificationConfirmation handleBootNotificationRequest(UUID sessionIndex, BootNotificationRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public DataTransferConfirmation handleDataTransferRequest(UUID sessionIndex, DataTransferRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public HeartbeatConfirmation handleHeartbeatRequest(UUID sessionIndex, HeartbeatRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public MeterValuesConfirmation handleMeterValuesRequest(UUID sessionIndex, MeterValuesRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public StartTransactionConfirmation handleStartTransactionRequest(UUID sessionIndex, StartTransactionRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public StatusNotificationConfirmation handleStatusNotificationRequest(UUID sessionIndex, StatusNotificationRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+
+            @Override
+            public StopTransactionConfirmation handleStopTransactionRequest(UUID sessionIndex, StopTransactionRequest request) {
+
+                System.out.println(request);
+                // ... handle event
+
+                return null; // returning null means unsupported feature
+            }
+        };
+    }
+
+    @Bean
+    public ServerCoreProfile createCore(ServerCoreEventHandler serverCoreEventHandler) {
+        return new ServerCoreProfile(serverCoreEventHandler);
+    }
+}
+```
+
+```
+package eu.chargetime.ocpp.jsonserverimplementation.config;
+
+import eu.chargetime.ocpp.ServerEvents;
+import eu.chargetime.ocpp.model.SessionInformation;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.UUID;
+
+@Configuration
+@Getter
+@Slf4j
+public class ServerEventConfig {
+
+    @Bean
+    public ServerEvents createServerCoreImpl() {
+        return getNewServerEventsImpl();
+    }
+
+    private ServerEvents getNewServerEventsImpl() {
+        return new ServerEvents() {
+
+            @Override
+            public void newSession(UUID sessionIndex, SessionInformation information) {
+
+                // sessionIndex is used to send messages.
+                System.out.println("New session " + sessionIndex + ": " + information.getIdentifier());
+            }
+
+            @Override
+            public void lostSession(UUID sessionIndex) {
+
+                System.out.println("Session " + sessionIndex + " lost connection");
+            }
+        };
+    }
+}
+```
+
+```
+package eu.chargetime.ocpp.jsonserverimplementation.config;
+
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableConfigurationProperties
+@Getter
+public class ApplicationConfiguration {
+
+    @Value("${server.port}")
+    private Integer serverPort;
+}
+```
+
+```
+package eu.chargetime.ocpp.jsonserverimplementation.server;
+
+import eu.chargetime.ocpp.JSONServer;
+import eu.chargetime.ocpp.ServerEvents;
+import eu.chargetime.ocpp.jsonserverimplementation.config.ApplicationConfiguration;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+
+@Slf4j
+@Component
+@AllArgsConstructor
+public class JsonServerImpl {
+
+    private final ServerEvents serverEvents;
+    private final JSONServer server;
+    private final ApplicationConfiguration applicationConfiguration;
+
+    @PostConstruct
+    public void startServer() throws Exception {
+        server.open("localhost", applicationConfiguration.getServerPort(), serverEvents);
+    }
+}
+```
 
 Maven
 =====
