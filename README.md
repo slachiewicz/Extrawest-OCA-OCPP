@@ -22,7 +22,7 @@ I recommend that you download and read the specification from openchargealliance
 =====
 For realization 1.6 OCPP JsonServer you need next:
 
-```
+``` Java
 package eu.chargetime.ocpp.jsonserverimplementation.config;
 
 import eu.chargetime.ocpp.JSONServer;
