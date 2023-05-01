@@ -184,7 +184,7 @@
                 <configuration>
                     <jreleaser>
                         <project>
-                            <description>OCPP operation tester for the Charge Points</description>
+                            <description>OCPP library 1.6/2.0.1 version</description>
                             <website>https://github.com/extrawest/Extrawest-OCA-OCPP/tree/main</website>
                             <docsUrl>https://github.com/extrawest/Extrawest-OCA-OCPP/tree/main</docsUrl>
                             <license>APACHE-2.0</license>
