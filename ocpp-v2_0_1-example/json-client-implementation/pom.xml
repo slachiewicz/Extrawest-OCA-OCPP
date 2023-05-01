@@ -14,7 +14,7 @@
     <name>ocpp-v2.0.1-client-example</name>
     <description>ocpp-v2.0.1-client-example</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
