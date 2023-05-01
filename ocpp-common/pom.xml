@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>eu.chargetime.ocpp</groupId>
+    <groupId>com.extrawest</groupId>
     <artifactId>common</artifactId>
     <version>1.0.2</version>
 
     <name>Java-OCA-OCPP common</name>
     <description>Implementation of Open Charge-Point Protocol common library.</description>
-    <url>https://github.com/ChargeTimeEU/Java-OCA-OCPP</url>
+    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
     <licenses>
       <license>
