@@ -22,28 +22,33 @@
 
     <developers>
         <developer>
-            <name>Thomas Volden</name>
-            <email>tv@chargetime.eu</email>
-            <organization>chargetime.eu</organization>
-            <organizationUrl>http://www.chargetime.eu</organizationUrl>
+            <name>Vladyslav Tertyshnyi</name>
+            <email>vladyslav.tertyshnyi@extrawest.com</email>
+            <organization>extrawest</organization>
+            <organizationUrl>https://www.extrawest.com/</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/ChargeTimeEU/Java-OCA-OCPP.git</connection>
-        <developerConnection>scm:git:ssh://github.com:ChargeTimeEU/Java-OCA-OCPP.git</developerConnection>
-        <url>https://github.com/ChargeTimeEU/Java-OCA-OCPP.git</url>
+        <connection>scm:git:git://github.com/extrawest/Extrawest-OCA-OCPP.git</connection>
+        <developerConnection>scm:git:ssh://github.com/extrawest/Extrawest-OCA-OCPP.git</developerConnection>
+        <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
     </scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <!-- Sonatype Repository -->
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>sonatype-nexus-releases</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
+
+        <!-- GitHub Releases -->
+        <snapshotRepository>
+            <id>github-releases</id>
+            <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
+            <name>GitHub Package Registry</name>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
@@ -127,7 +132,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.8</version>
@@ -137,7 +142,7 @@
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 

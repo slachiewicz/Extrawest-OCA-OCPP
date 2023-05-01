@@ -39,14 +39,19 @@
     </scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <!-- Sonatype Repository -->
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>sonatype-nexus-releases</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
+
+        <!-- GitHub Releases -->
+        <snapshotRepository>
+            <id>github-releases</id>
+            <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
+            <name>GitHub Package Registry</name>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
