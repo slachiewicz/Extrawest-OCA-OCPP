@@ -26,7 +26,7 @@ public enum MessageType {
             .filter(messageType -> messageType.getMessageTypeId() == messageTypeId)
             .findFirst()
             .orElseThrow(
-                () -> new IllegalArgumentException("MessageType (id = %d) was not found".formatted(messageTypeId))
+                () -> new IllegalArgumentException(String.format("MessageType (id = %d) was not found", messageTypeId))
             );
     }
 }

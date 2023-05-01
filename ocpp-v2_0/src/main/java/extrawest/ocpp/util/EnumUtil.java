@@ -16,8 +16,9 @@ public final class EnumUtil {
                 return enumValue;
             }
         }
-        throw new IllegalArgumentException("No enum constant %s with field value %s"
-                .formatted(enumType.getName(), fieldValue));
+        throw new IllegalArgumentException(String.format(
+                "No enum constant %s with field value %s", enumType.getName(), fieldValue
+        ));
     }
 
 }
