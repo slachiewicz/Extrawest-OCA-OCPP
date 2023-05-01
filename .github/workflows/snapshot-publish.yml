@@ -5,12 +5,9 @@ on:
     branches:
       - dev
 
-#env:
-#  GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-#  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 env:
-  GITHUB_USERNAME: vladyslav-tertyshnyi-ew
-  GITHUB_TOKEN: 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
+  GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   publish:
