@@ -11,7 +11,7 @@
 
     <name>Java-OCA-OCPP v2.0</name>
     <description>Implementation of Open Charge-Point Protocol version 2.0.</description>
-    <url>https://github.com/ChargeTimeEU/Java-OCA-OCPP</url>
+    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
     <licenses>
         <license>
@@ -25,17 +25,17 @@
 
     <developers>
         <developer>
-            <name>Thomas Volden</name>
-            <email>tv@chargetime.eu</email>
-            <organization>chargetime.eu</organization>
-            <organizationUrl>http://www.chargetime.eu</organizationUrl>
+            <name>Vladyslav Tertyshnyi</name>
+            <email>vladyslav.tertyshnyi@extrawest.com</email>
+            <organization>extrawest.com</organization>
+            <organizationUrl>http://extrawest.com</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/ChargeTimeEU/Java-OCA-OCPP.git</connection>
-        <developerConnection>scm:git:ssh://github.com:ChargeTimeEU/Java-OCA-OCPP.git</developerConnection>
-        <url>https://github.com/ChargeTimeEU/Java-OCA-OCPP.git</url>
+        <connection>scm:git:git://github.com/extrawest/Extrawest-OCA-OCPP.git</connection>
+        <developerConnection>scm:git:ssh://github.com/extrawest/Extrawest-OCA-OCPP.git</developerConnection>
+        <url>https://github.com/extrawest/Extrawest-OCA-OCPP.git</url>
     </scm>
 
     <distributionManagement>
