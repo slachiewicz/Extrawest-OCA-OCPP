@@ -58,7 +58,7 @@
             <version>1.0.2</version>
         </dependency>
         <dependency>
-            <groupId>eu.chargetime.ocpp</groupId>
+            <groupId>com.extrawest</groupId>
             <artifactId>v2_0</artifactId>
             <version>1.0.2</version>
         </dependency>
