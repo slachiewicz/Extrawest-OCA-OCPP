@@ -10,7 +10,7 @@ on:
 #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 env:
   GITHUB_USERNAME: vladyslav-tertyshnyi-ew
-  GITHUB_TOKEN: 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
+  GITHUB_TOKEN: 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
 
 jobs:
   publish:
