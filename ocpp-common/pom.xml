@@ -39,14 +39,12 @@
         <repository>
             <id>sonatype-nexus-releases</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-            <layout>default</layout>
         </repository>
 
         <!-- GitHub Releases -->
         <snapshotRepository>
             <id>github-releases</id>
-            <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
-            <layout>default</layout>
+            <url>https://maven.pkg.github.com/extrawest/BDD-Charge-Point-Tester-via-OCPP-J-</url>
             <name>GitHub Package Registry</name>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
