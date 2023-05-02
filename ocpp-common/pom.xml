@@ -8,12 +8,12 @@
     <artifactId>common</artifactId>
     <version>1.0.2</version>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>3.0.2</version>-->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+<!--    </parent>-->
 
     <name>Java-OCA-OCPP common</name>
     <description>Implementation of Open Charge-Point Protocol common library.</description>
@@ -35,27 +35,27 @@
         </developer>
     </developers>
 
-    <scm>
+    <!--<scm>
         <connection>scm:git:git://github.com/extrawest/Extrawest-OCA-OCPP.git</connection>
         <developerConnection>scm:git:ssh://github.com/extrawest/Extrawest-OCA-OCPP.git</developerConnection>
         <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
     </scm>
 
     <distributionManagement>
-        <!-- Sonatype Repository -->
+        &lt;!&ndash; Sonatype Repository &ndash;&gt;
         <repository>
             <id>sonatype-nexus-releases</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
 
-        <!-- GitHub Releases -->
+        &lt;!&ndash; GitHub Releases &ndash;&gt;
         <snapshotRepository>
             <id>github-releases</id>
             <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
             <name>GitHub Package Registry</name>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <dependencies>
         <dependency>
