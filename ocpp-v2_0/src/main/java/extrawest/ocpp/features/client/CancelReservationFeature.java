@@ -1,10 +1,10 @@
 package extrawest.ocpp.features.client;
 
+import eu.chargetime.ocpp.feature.Feature;
+import eu.chargetime.ocpp.model.Confirmation;
+import eu.chargetime.ocpp.model.Request;
 import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
 import extrawest.ocpp.features.client.handlers.IClientCancelReservationRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
 import extrawest.ocpp.model.request.CancelReservationRequest;
 import extrawest.ocpp.model.response.CancelReservationResponse;
 

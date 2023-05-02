@@ -55,7 +55,7 @@
     </distributionManagement>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>eu.chargetime.ocpp</groupId>
             <artifactId>common</artifactId>
             <version>1.0.2</version>
@@ -64,7 +64,7 @@
             <groupId>eu.chargetime.ocpp</groupId>
             <artifactId>OCPP-J</artifactId>
             <version>1.0.2</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.java-websocket</groupId>
             <artifactId>Java-WebSocket</artifactId>
@@ -97,6 +97,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.chargetime.ocpp</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.chargetime.ocpp</groupId>
+            <artifactId>OCPP-J</artifactId>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
 
