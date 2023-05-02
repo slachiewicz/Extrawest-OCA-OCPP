@@ -42,12 +42,12 @@
         </repository>
 
         <!-- GitHub Releases -->
-        <!--<snapshotRepository>
+        <snapshotRepository>
             <id>github-releases</id>
             <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
             <name>GitHub Package Registry</name>
             <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>-->
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
