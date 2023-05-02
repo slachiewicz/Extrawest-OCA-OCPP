@@ -13,7 +13,7 @@
     <description>Implementation of Open Charge-Point Protocol common library.</description>
     <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>release</id>
             <build>
@@ -34,7 +34,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!--<plugin>
+                    &lt;!&ndash;<plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>3.5.0</version>
@@ -49,7 +49,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>-->
+                    </plugin>&ndash;&gt;
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -66,7 +66,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <distributionManagement>
         <!-- Sonatype Repository -->
@@ -144,15 +144,15 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.0.2</version>
                 <configuration>
                     <classifier>exec</classifier>
                 </configuration>
-            </plugin>
-            <plugin>
+            </plugin>-->
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>3.2.1</version>
@@ -164,8 +164,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
+            </plugin>-->
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
@@ -174,40 +174,7 @@
                     <target>11</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jreleaser</groupId>
-                <artifactId>jreleaser-maven-plugin</artifactId>
-                <version>1.5.0</version>
-                <configuration>
-                    <jreleaser>
-                        <project>
-                            <description>OCPP library 1.6/2.0.1 version</description>
-                            <website>https://github.com/extrawest/Extrawest-OCA-OCPP/tree/master</website>
-                            <docsUrl>https://github.com/extrawest/Extrawest-OCA-OCPP/tree/master</docsUrl>
-                            <license>APACHE-2.0</license>
-                            <copyright>2023 Extrawest</copyright>
-                        </project>
-                        <signing>
-                            <active>ALWAYS</active>
-                            <armored>true</armored>
-                        </signing>
-                        <deploy>
-                            <maven>
-                                <nexus2>
-                                    <maven-central>
-                                        <active>ALWAYS</active>
-                                        <url>https://s01.oss.sonatype.org/service/local</url>;
-                                        <closeRepository>false</closeRepository>
-                                        <releaseRepository>false</releaseRepository>
-                                        <stagingRepositories>target/staging-deploy</stagingRepositories>
-                                    </maven-central>
-                                </nexus2>
-                            </maven>
-                        </deploy>
-                    </jreleaser>
-                </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
