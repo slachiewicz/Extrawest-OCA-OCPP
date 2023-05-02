@@ -10,16 +10,16 @@
 
     <name>Java-OCA-OCPP common</name>
     <description>Implementation of Open Charge-Point Protocol common library.</description>
-<!--    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>-->
+    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
-    <!--<licenses>
+    <licenses>
       <license>
         <name>MIT License</name>
         <url>http://www.opensource.org/licenses/mit-license.php</url>
       </license>
-    </licenses>-->
+    </licenses>
 
-    <!--<developers>
+    <developers>
         <developer>
             <name>Vladyslav Tertyshnyi</name>
             <email>vladyslav.tertyshnyi@extrawest.com</email>
@@ -35,20 +35,20 @@
     </scm>
 
     <distributionManagement>
-        &lt;!&ndash; Sonatype Repository &ndash;&gt;
+        <!-- Sonatype Repository -->
         <repository>
             <id>sonatype-nexus-releases</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
 
-        &lt;!&ndash; GitHub Releases &ndash;&gt;
+        <!-- GitHub Releases -->
         <snapshotRepository>
             <id>github-releases</id>
             <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
             <name>GitHub Package Registry</name>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
-    </distributionManagement>-->
+    </distributionManagement>
 
     <dependencies>
         <dependency>
