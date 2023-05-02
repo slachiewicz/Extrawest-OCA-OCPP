@@ -13,7 +13,7 @@
     <description>Implementation of Open Charge-Point Protocol common library.</description>
     <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>release</id>
             <build>
@@ -37,7 +37,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <distributionManagement>
         <!-- Sonatype Repository -->
@@ -146,7 +146,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.jreleaser</groupId>
                 <artifactId>jreleaser-maven-plugin</artifactId>
                 <version>1.5.0</version>
@@ -178,7 +178,7 @@
                         </deploy>
                     </jreleaser>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
