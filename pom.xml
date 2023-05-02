@@ -11,7 +11,7 @@
 
     <name>Java-OCA-OCPP</name>
     <description>Implementation of Open Charge-Point Protocol common library.</description>
-    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
+<!--    <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>-->
 
     <!--<profiles>
         <profile>
@@ -39,23 +39,23 @@
         </profile>
     </profiles>-->
 
-    <distributionManagement>
-        <!-- Sonatype Repository -->
+    <!--<distributionManagement>
+        &lt;!&ndash; Sonatype Repository &ndash;&gt;
         <repository>
             <id>sonatype-nexus-releases</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
 
-        <!-- GitHub Releases -->
+        &lt;!&ndash; GitHub Releases &ndash;&gt;
         <snapshotRepository>
             <id>github-releases</id>
             <url>https://maven.pkg.github.com/extrawest/Extrawest-OCA-OCPP</url>
             <name>GitHub Package Registry</name>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
-    <licenses>
+    <!--<licenses>
         <license>
             <name>MIT License</name>
             <url>http://www.opensource.org/licenses/mit-license.php</url>
@@ -75,7 +75,7 @@
         <connection>scm:git:git://github.com/extrawest/Extrawest-OCA-OCPP.git</connection>
         <developerConnection>scm:git:ssh://github.com/extrawest/Extrawest-OCA-OCPP.git</developerConnection>
         <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
-    </scm>
+    </scm>-->
 
     <modules>
         <module>ocpp-common</module>
@@ -146,7 +146,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.jreleaser</groupId>
                 <artifactId>jreleaser-maven-plugin</artifactId>
                 <version>1.5.0</version>
@@ -178,7 +178,7 @@
                         </deploy>
                     </jreleaser>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
