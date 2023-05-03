@@ -27,7 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.utilities.MoreObjects;
 
 /** Wrapper class for a message */
 public class Message {

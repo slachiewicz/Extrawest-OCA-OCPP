@@ -28,7 +28,7 @@ package extrawest.ocpp.utilities.test;
 
 import static org.junit.Assert.*;
 
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.utilities.MoreObjects;
 import java.util.*;
 import org.junit.Test;
 

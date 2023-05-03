@@ -27,7 +27,7 @@ package extrawest.ocpp.model.dataTypes.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import extrawest.ocpp.util.EnumUtil;
+import com.extrawest.ocpp_2_0_1.util.EnumUtil;
 
 public enum ConnectorStatusEnumType {
   AVAILABLE("Available"),
