@@ -252,7 +252,7 @@ public class WebSocketListener implements Listener {
         configuration.getParameter(JSONConfiguration.PING_INTERVAL_PARAMETER, 60));
   }
 
-  void enableWSS(WssFactoryBuilder wssFactoryBuilder) {
+  public void enableWSS(WssFactoryBuilder wssFactoryBuilder) {
     if (server != null) {
       throw new IllegalStateException("Cannot enable WSS on already running server");
     }

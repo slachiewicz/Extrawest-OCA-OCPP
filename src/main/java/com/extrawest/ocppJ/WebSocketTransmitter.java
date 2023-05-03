@@ -167,7 +167,7 @@ public class WebSocketTransmitter implements Transmitter {
     client.setProxy(configuration.getParameter(JSONConfiguration.PROXY_PARAMETER, Proxy.NO_PROXY));
   }
 
-  void enableWSS(WssSocketBuilder wssSocketBuilder) {
+  public void enableWSS(WssSocketBuilder wssSocketBuilder) {
     if (client != null) {
       throw new IllegalStateException("Cannot enable WSS on already connected client");
     }
