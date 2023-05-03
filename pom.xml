@@ -88,7 +88,7 @@
     <build>
         <finalName>${project.name}</finalName>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
@@ -96,7 +96,7 @@
                     <target>1.8</target>
                 </configuration>
                 <version>3.5.1</version>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>org.eluder.coveralls</groupId>
