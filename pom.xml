@@ -13,6 +13,10 @@
     <description>Implementation of Open Charge-Point Protocol common library.</description>
     <url>https://github.com/extrawest/Extrawest-OCA-OCPP</url>
 
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+
     <!--<profiles>
         <profile>
             <id>release</id>
