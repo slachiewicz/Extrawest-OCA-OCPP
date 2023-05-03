@@ -26,7 +26,7 @@ package extrawest.ocpp.model.basic.types.test;
 */
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.dataTypes.VariableType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.VariableType;
 import extrawest.ocpp.utilities.TestUtilities;
 import org.junit.Assert;
 import org.junit.Test;

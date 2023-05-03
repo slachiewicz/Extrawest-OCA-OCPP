@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.GetLogRequest;
-import extrawest.ocpp.model.response.GetLogResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetLogRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetLogResponse;
 
 /** Charging Station handler of {@link GetLogRequest} */
 public interface IClientGetLogRequestHandler {

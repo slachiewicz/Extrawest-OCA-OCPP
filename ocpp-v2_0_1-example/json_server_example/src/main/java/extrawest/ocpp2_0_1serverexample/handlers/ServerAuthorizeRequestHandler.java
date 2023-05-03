@@ -5,10 +5,10 @@ import extrawest.ocpp.NotConnectedException;
 import extrawest.ocpp.OccurenceConstraintException;
 import extrawest.ocpp.UnsupportedFeatureException;
 import extrawest.ocpp.features.server.handlers.*;
-import extrawest.ocpp.model.dataTypes.*;
-import extrawest.ocpp.model.dataTypes.enums.*;
-import extrawest.ocpp.model.request.*;
-import extrawest.ocpp.model.response.AuthorizeResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.*;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.*;
+import com.extrawest.ocpp_2_0_1.model.request.*;
+import com.extrawest.ocpp_2_0_1.model.response.AuthorizeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;

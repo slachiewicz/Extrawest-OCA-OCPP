@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientPublishFirmwareRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GenericStatusEnumType;
-import extrawest.ocpp.model.request.PublishFirmwareRequest;
-import extrawest.ocpp.model.response.PublishFirmwareResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientPublishFirmwareRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.PublishFirmwareRequest;
+import com.extrawest.ocpp_2_0_1.model.response.PublishFirmwareResponse;
 
 public class ClientPublishFirmwareRequestHandler implements IClientPublishFirmwareRequestHandler {
     @Override

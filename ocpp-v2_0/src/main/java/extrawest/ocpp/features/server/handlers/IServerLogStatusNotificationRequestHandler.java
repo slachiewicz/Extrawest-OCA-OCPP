@@ -1,8 +1,8 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.AuthorizeRequest;
-import extrawest.ocpp.model.request.LogStatusNotificationRequest;
-import extrawest.ocpp.model.response.LogStatusNotificationResponse;
+import com.extrawest.ocpp_2_0_1.model.request.AuthorizeRequest;
+import com.extrawest.ocpp_2_0_1.model.request.LogStatusNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.LogStatusNotificationResponse;
 
 import java.util.UUID;
 

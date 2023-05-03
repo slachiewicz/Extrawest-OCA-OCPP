@@ -25,7 +25,7 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.SessionInformation;
+import com.extrawest.common.modelSessionInformation;
 
 import java.util.UUID;
 

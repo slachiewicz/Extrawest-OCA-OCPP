@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientClearChargingProfileRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.ClearChargingProfileStatusEnumType;
-import extrawest.ocpp.model.request.ClearChargingProfileRequest;
-import extrawest.ocpp.model.response.ClearChargingProfileResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientClearChargingProfileRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ClearChargingProfileStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.ClearChargingProfileRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ClearChargingProfileResponse;
 
 public class ClientClearChargingProfileRequestHandler implements IClientClearChargingProfileRequestHandler {
     @Override

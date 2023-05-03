@@ -1,11 +1,11 @@
 package extrawest.ocpp;
 
 import com.google.gson.*;
-import extrawest.ocpp.model.CallErrorMessage;
-import extrawest.ocpp.model.CallMessage;
-import extrawest.ocpp.model.CallResultMessage;
-import extrawest.ocpp.model.Message;
-import extrawest.ocpp.model.Exclude;
+import com.extrawest.common.modelCallErrorMessage;
+import com.extrawest.common.modelCallMessage;
+import com.extrawest.common.modelCallResultMessage;
+import com.extrawest.common.modelMessage;
+import com.extrawest.common.modelExclude;
 
 import java.lang.reflect.Type;
 import java.time.LocalDateTime;

@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientUnlockConnectorRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.UnlockStatusEnumType;
-import extrawest.ocpp.model.request.UnlockConnectorRequest;
-import extrawest.ocpp.model.response.UnlockConnectorResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientUnlockConnectorRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.UnlockStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.UnlockConnectorRequest;
+import com.extrawest.ocpp_2_0_1.model.response.UnlockConnectorResponse;
 
 public class ClientUnlockConnectorRequestHandler implements IClientUnlockConnectorRequestHandler {
     @Override

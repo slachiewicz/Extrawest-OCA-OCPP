@@ -3,13 +3,13 @@ package extrawest.ocpp.model.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.CertificateHashDataChainType;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
-import extrawest.ocpp.model.dataTypes.StatusInfoType;
-import extrawest.ocpp.model.dataTypes.enums.GetInstalledCertificateStatusEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.model.validation.Validator;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CertificateHashDataChainType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.StatusInfoType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GetInstalledCertificateStatusEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.model.validation.Validator;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,7 +30,7 @@ import java.util.List;
 @NoArgsConstructor
 public class GetInstalledCertificateIdsResponse extends Confirmation {
 
-    private transient Validator<Object> requiredValidator = new RequiredValidator();
+    private final transient Validator<Object> requiredValidator = new RequiredValidator();
 
     /**
      * This class does not get 'AdditionalProperties = false' in the schema generation, so it can be extended with arbitrary JSON properties to allow adding custom data.

@@ -25,9 +25,9 @@ package extrawest.ocpp.model.request;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.RequestWithId;
-import extrawest.ocpp.model.dataTypes.GetVariableDataType;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.RequestWithId;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableDataType;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.NoArgsConstructor;
 
 import java.util.Arrays;

@@ -4,10 +4,10 @@ import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
 
 import extrawest.ocpp.*;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.ConfirmationCompletedHandler;
-import extrawest.ocpp.model.Message;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.modelConfirmationCompletedHandler;
+import com.extrawest.common.modelMessage;
+import com.extrawest.common.model.Request;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

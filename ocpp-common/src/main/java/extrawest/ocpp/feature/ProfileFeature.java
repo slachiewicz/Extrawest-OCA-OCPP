@@ -26,8 +26,8 @@ package extrawest.ocpp.feature;
 */
 
 import extrawest.ocpp.feature.profile.Profile;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
 import java.util.UUID;
 
 public abstract class ProfileFeature implements Feature {

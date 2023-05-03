@@ -1,7 +1,7 @@
 package extrawest.ocpp;
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
 
 /*
 ChargeTime.eu - Java-OCA-OCPP

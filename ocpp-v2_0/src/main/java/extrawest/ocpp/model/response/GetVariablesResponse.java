@@ -26,9 +26,9 @@ package extrawest.ocpp.model.response;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.GetVariableResultType;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableResultType;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.NoArgsConstructor;
 
 import java.util.Arrays;

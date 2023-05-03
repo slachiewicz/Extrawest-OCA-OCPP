@@ -25,8 +25,8 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
 
 import java.util.Map;
 import java.util.Optional;

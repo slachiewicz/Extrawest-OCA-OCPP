@@ -31,10 +31,10 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.*;
 
 import extrawest.ocpp.*;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.TestConfirmation;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.modelTestConfirmation;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import org.junit.Before;

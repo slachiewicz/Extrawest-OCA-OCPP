@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.AuthorizeRequest;
-import extrawest.ocpp.model.response.AuthorizeResponse;
+import com.extrawest.ocpp_2_0_1.model.request.AuthorizeRequest;
+import com.extrawest.ocpp_2_0_1.model.response.AuthorizeResponse;
 
 import java.util.UUID;
 

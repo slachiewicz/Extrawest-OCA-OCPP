@@ -25,7 +25,7 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.SessionInformation;
+import com.extrawest.common.modelSessionInformation;
 
 public interface ListenerEvents {
   void authenticateSession(SessionInformation information, String username, byte[] password)

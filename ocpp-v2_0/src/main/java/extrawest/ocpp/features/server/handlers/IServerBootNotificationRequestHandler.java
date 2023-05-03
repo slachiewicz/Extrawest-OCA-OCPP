@@ -25,8 +25,8 @@ package extrawest.ocpp.features.server.handlers;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.response.BootNotificationResponse;
-import extrawest.ocpp.model.request.BootNotificationRequest;
+import com.extrawest.ocpp_2_0_1.
+        com.extrawest.ocpp_2_0_1.model.request.BootNotificationRequest;
 import java.util.UUID;
 
 /** Central system handler of {@link BootNotificationRequest}s. */

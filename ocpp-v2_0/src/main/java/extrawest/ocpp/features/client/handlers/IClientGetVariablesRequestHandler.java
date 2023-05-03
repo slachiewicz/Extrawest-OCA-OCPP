@@ -25,8 +25,8 @@ package extrawest.ocpp.features.client.handlers;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.request.GetVariablesRequest;
-import extrawest.ocpp.model.response.GetVariablesResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetVariablesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetVariablesResponse;
 
 /** Charging Station handler of {@link GetVariablesRequest} */
 public interface IClientGetVariablesRequestHandler {

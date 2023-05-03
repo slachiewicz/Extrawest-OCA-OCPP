@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.GetChargingProfilesRequest;
-import extrawest.ocpp.model.response.GetChargingProfilesResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetChargingProfilesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetChargingProfilesResponse;
 
 /** Charging Station handler of {@link GetChargingProfilesRequest} */
 public interface IClientGetChargingProfilesRequestHandler {

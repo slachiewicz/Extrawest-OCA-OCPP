@@ -3,13 +3,13 @@ package extrawest.ocpp.model.dataTypes;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.model.dataTypes.enums.MessagePriorityEnumType;
-import extrawest.ocpp.model.dataTypes.enums.MessageStateEnumType;
-import extrawest.ocpp.model.validation.OCPP2PrimDatatypes;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.model.validation.Validator;
-import extrawest.ocpp.model.validation.ValidatorBuilder;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.MessagePriorityEnumType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.MessageStateEnumType;
+import com.extrawest.ocpp_2_0_1.model.validation.OCPP2PrimDatatypes;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.model.validation.Validator;
+import com.extrawest.common.model.validation.ValidatorBuilder;
 
 import java.time.LocalDateTime;
 
@@ -35,9 +35,9 @@ import java.time.LocalDateTime;
 })
 public class MessageInfoType implements Validatable {
 
-    private transient Validator<Object> requiredValidator = new RequiredValidator();
+    private final transient Validator<Object> requiredValidator = new RequiredValidator();
 
-    private transient Validator transactionIdValidator = new ValidatorBuilder()
+    private final transient Validator transactionIdValidator = new ValidatorBuilder()
                     .addRule(OCPP2PrimDatatypes.string36())
                     .build();
 

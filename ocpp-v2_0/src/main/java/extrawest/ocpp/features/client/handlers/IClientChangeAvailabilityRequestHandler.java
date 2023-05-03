@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.ChangeAvailabilityRequest;
-import extrawest.ocpp.model.response.ChangeAvailabilityResponse;
+import com.extrawest.ocpp_2_0_1.model.request.ChangeAvailabilityRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ChangeAvailabilityResponse;
 
 /** Charging Station handler of {@link ChangeAvailabilityRequest} */
 public interface IClientChangeAvailabilityRequestHandler {

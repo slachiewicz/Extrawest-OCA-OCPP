@@ -25,11 +25,11 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.feature.Feature;
+import com.extrawest.common.feature.Feature;
 import extrawest.ocpp.feature.profile.Profile;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.utilities.MoreObjects;
 
 import java.util.HashMap;
 import java.util.Map;

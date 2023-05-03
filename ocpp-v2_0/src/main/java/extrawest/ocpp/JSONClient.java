@@ -25,9 +25,9 @@ package extrawest.ocpp;
  * SOFTWARE.
  */
 
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
 import extrawest.ocpp.wss.BaseWssSocketBuilder;
 import extrawest.ocpp.wss.WssSocketBuilder;
 import java.io.IOException;

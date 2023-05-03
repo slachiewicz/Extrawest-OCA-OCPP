@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.SendLocalListRequest;
-import extrawest.ocpp.model.response.SendLocalListResponse;
+import com.extrawest.ocpp_2_0_1.model.request.SendLocalListRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SendLocalListResponse;
 
 /** Charging Station handler of {@link SendLocalListRequest} */
 public interface IClientSendLocalListRequestHandler {

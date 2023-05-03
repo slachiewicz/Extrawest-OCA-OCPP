@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientSetMonitoringLevelRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GenericStatusEnumType;
-import extrawest.ocpp.model.request.SetMonitoringLevelRequest;
-import extrawest.ocpp.model.response.SetMonitoringLevelResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientSetMonitoringLevelRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.SetMonitoringLevelRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SetMonitoringLevelResponse;
 
 public class ClientSetMonitoringLevelRequestHandler implements IClientSetMonitoringLevelRequestHandler {
     @Override

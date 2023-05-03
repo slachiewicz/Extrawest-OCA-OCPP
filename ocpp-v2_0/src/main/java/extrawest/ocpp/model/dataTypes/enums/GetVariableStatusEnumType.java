@@ -27,8 +27,8 @@ package extrawest.ocpp.model.dataTypes.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import extrawest.ocpp.model.dataTypes.GetVariableResultType;
-import extrawest.ocpp.util.EnumUtil;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableResultType;
+import com.extrawest.ocpp_2_0_1.util.EnumUtil;
 
 /** GetVariableStatusEnumType is used by {@link GetVariableResultType} */
 public enum GetVariableStatusEnumType {

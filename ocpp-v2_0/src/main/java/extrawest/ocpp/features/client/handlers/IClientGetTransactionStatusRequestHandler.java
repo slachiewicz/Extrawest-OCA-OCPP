@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.GetTransactionStatusRequest;
-import extrawest.ocpp.model.response.GetTransactionStatusResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetTransactionStatusRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetTransactionStatusResponse;
 
 /** Charging Station handler of {@link GetTransactionStatusRequest} */
 public interface IClientGetTransactionStatusRequestHandler {

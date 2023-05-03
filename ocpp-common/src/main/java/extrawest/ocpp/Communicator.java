@@ -31,8 +31,8 @@ import extrawest.ocpp.utilities.SugarUtil;
 import java.util.ArrayDeque;
 import javax.xml.soap.SOAPMessage;
 
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.*;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;

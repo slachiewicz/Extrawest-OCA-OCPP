@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.NotifyEVChargingNeedsRequest;
-import extrawest.ocpp.model.response.NotifyEVChargingNeedsResponse;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyEVChargingNeedsRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyEVChargingNeedsResponse;
 
 import java.util.UUID;
 

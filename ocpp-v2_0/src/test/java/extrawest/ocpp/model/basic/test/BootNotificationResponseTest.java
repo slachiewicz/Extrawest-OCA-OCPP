@@ -26,7 +26,7 @@ package extrawest.ocpp.model.basic.test;
 */
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.response.BootNotificationResponse;
+import com.extrawest.ocpp_2_0_1.model.response.BootNotificationResponse;
 import org.junit.Test;
 
 public class BootNotificationResponseTest {

@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.server;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.server.handlers.IServerGet15118EVCertificateRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.Get15118EVCertificateRequest;
-import extrawest.ocpp.model.response.Get15118EVCertificateResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerGet15118EVCertificateRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.Get15118EVCertificateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.Get15118EVCertificateResponse;
 
 import java.util.UUID;
 

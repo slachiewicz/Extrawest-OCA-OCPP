@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientUpdateFirmwareRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.UpdateFirmwareStatusEnumType;
-import extrawest.ocpp.model.request.UpdateFirmwareRequest;
-import extrawest.ocpp.model.response.UpdateFirmwareResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientUpdateFirmwareRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.UpdateFirmwareStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.UpdateFirmwareRequest;
+import com.extrawest.ocpp_2_0_1.model.response.UpdateFirmwareResponse;
 
 public class ClientUpdateFirmwareRequestHandler implements IClientUpdateFirmwareRequestHandler {
     @Override

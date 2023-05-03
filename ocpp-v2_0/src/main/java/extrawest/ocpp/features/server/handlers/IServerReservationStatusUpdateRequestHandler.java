@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.ReservationStatusUpdateRequest;
-import extrawest.ocpp.model.response.ReservationStatusUpdateResponse;
+import com.extrawest.ocpp_2_0_1.model.request.ReservationStatusUpdateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ReservationStatusUpdateResponse;
 
 import java.util.UUID;
 

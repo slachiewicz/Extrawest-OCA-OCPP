@@ -1,8 +1,8 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerPublishFirmwareStatusNotificationRequestHandler;
-import extrawest.ocpp.model.request.PublishFirmwareStatusNotificationRequest;
-import extrawest.ocpp.model.response.PublishFirmwareStatusNotificationResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerPublishFirmwareStatusNotificationRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.request.PublishFirmwareStatusNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.PublishFirmwareStatusNotificationResponse;
 
 import java.util.UUID;
 

@@ -25,10 +25,10 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.SessionInformation;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.modelSessionInformation;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;

@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.server;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.server.handlers.IServerReservationStatusUpdateRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.ReservationStatusUpdateRequest;
-import extrawest.ocpp.model.response.ReservationStatusUpdateResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerReservationStatusUpdateRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.ReservationStatusUpdateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ReservationStatusUpdateResponse;
 
 import java.util.UUID;
 

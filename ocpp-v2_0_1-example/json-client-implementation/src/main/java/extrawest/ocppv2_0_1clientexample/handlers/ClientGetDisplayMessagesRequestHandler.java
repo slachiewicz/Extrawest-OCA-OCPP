@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientGetDisplayMessagesRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GetDisplayMessagesStatusEnumType;
-import extrawest.ocpp.model.request.GetDisplayMessagesRequest;
-import extrawest.ocpp.model.response.GetDisplayMessagesResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientGetDisplayMessagesRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GetDisplayMessagesStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.GetDisplayMessagesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetDisplayMessagesResponse;
 
 public class ClientGetDisplayMessagesRequestHandler implements IClientGetDisplayMessagesRequestHandler {
     @Override

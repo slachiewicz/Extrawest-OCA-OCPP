@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.client;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.client.handlers.IClientUpdateFirmwareRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.UpdateFirmwareRequest;
-import extrawest.ocpp.model.response.UpdateFirmwareResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientUpdateFirmwareRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.UpdateFirmwareRequest;
+import com.extrawest.ocpp_2_0_1.model.response.UpdateFirmwareResponse;
 
 import java.util.UUID;
 

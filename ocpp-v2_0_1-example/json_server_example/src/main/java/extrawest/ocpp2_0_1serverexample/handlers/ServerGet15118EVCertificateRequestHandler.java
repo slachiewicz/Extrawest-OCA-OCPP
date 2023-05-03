@@ -1,9 +1,9 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerGet15118EVCertificateRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.Iso15118EVCertificateStatusEnumType;
-import extrawest.ocpp.model.request.Get15118EVCertificateRequest;
-import extrawest.ocpp.model.response.Get15118EVCertificateResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerGet15118EVCertificateRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.Iso15118EVCertificateStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.Get15118EVCertificateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.Get15118EVCertificateResponse;
 
 import java.util.UUID;
 

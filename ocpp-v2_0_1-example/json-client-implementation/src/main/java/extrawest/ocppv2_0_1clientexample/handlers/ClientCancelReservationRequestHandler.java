@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientCancelReservationRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.CancelReservationStatusEnumType;
-import extrawest.ocpp.model.request.CancelReservationRequest;
-import extrawest.ocpp.model.response.CancelReservationResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientCancelReservationRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.CancelReservationStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.CancelReservationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.CancelReservationResponse;
 
 public class ClientCancelReservationRequestHandler implements IClientCancelReservationRequestHandler {
     @Override

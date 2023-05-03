@@ -26,7 +26,7 @@ package extrawest.ocpp.model.validation.test;
 */
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.validation.IdentifierStringValidationRule;
+import com.extrawest.common.model.validation.IdentifierStringValidationRule;
 import org.junit.Test;
 
 public class IdentifierStringValidationRuleTest {

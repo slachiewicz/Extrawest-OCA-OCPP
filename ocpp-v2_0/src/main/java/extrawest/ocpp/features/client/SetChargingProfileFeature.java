@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.client;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.client.handlers.IClientSetChargingProfileRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.SetChargingProfileRequest;
-import extrawest.ocpp.model.response.SetChargingProfileResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientSetChargingProfileRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.SetChargingProfileRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SetChargingProfileResponse;
 
 import java.util.UUID;
 

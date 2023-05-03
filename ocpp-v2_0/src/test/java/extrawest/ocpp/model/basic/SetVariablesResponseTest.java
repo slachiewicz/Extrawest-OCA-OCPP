@@ -29,8 +29,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.response.SetVariablesResponse;
-import extrawest.ocpp.model.dataTypes.SetVariableResultType;
+import com.extrawest.ocpp_2_0_1.model.response.SetVariablesResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.SetVariableResultType;
 import extrawest.ocpp.utilities.TestUtilities;
 import org.junit.Assert;
 import org.junit.Test;

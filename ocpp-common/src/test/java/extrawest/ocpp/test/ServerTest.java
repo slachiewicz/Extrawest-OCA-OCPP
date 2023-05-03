@@ -3,9 +3,9 @@ package extrawest.ocpp.test;
 import static org.mockito.Mockito.*;
 
 import extrawest.ocpp.*;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.SessionInformation;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.modelSessionInformation;
 import java.util.Optional;
 import java.util.UUID;
 import org.junit.Before;

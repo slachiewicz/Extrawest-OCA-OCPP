@@ -26,8 +26,8 @@ package extrawest.ocpp.model.response;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.utilities.MoreObjects;
 
 import java.util.Objects;
 

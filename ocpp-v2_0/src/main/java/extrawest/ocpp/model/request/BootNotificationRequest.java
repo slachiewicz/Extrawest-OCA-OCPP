@@ -26,11 +26,11 @@ package extrawest.ocpp.model.request;
 */
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import extrawest.ocpp.model.RequestWithId;
-import extrawest.ocpp.model.dataTypes.ChargingStationType;
-import extrawest.ocpp.model.dataTypes.enums.BootReasonEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.RequestWithId;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ChargingStationType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.BootReasonEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.Getter;
 
 import java.util.Objects;

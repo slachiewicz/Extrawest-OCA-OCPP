@@ -3,10 +3,10 @@ package extrawest.ocpp.model.dataTypes;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.model.dataTypes.enums.ChargingRateUnitEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.model.validation.Validator;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ChargingRateUnitEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.model.validation.Validator;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -37,7 +37,7 @@ import java.util.List;
 @NoArgsConstructor
 public class CompositeScheduleType implements Validatable {
 
-    private transient Validator<Object> requiredValidator = new RequiredValidator();
+    private final transient Validator<Object> requiredValidator = new RequiredValidator();
 
     /**
      * This class does not get 'AdditionalProperties = false' in the schema generation, so it can be extended with arbitrary JSON properties to allow adding custom data.

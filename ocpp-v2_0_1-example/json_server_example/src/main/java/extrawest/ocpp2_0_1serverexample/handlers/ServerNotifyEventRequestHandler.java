@@ -1,8 +1,8 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerNotifyEventRequestHandler;
-import extrawest.ocpp.model.request.NotifyEventRequest;
-import extrawest.ocpp.model.response.NotifyEventResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerNotifyEventRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyEventRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyEventResponse;
 
 import java.util.UUID;
 

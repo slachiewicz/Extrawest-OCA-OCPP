@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.client;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.client.handlers.IClientClearDisplayMessageRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.ClearDisplayMessageRequest;
-import extrawest.ocpp.model.response.ClearDisplayMessageResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientClearDisplayMessageRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.ClearDisplayMessageRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ClearDisplayMessageResponse;
 
 import java.util.UUID;
 

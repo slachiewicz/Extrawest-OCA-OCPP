@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.GetInstalledCertificateIdsRequest;
-import extrawest.ocpp.model.response.GetInstalledCertificateIdsResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetInstalledCertificateIdsRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetInstalledCertificateIdsResponse;
 
 /** Charging Station handler of {@link GetInstalledCertificateIdsRequest} */
 public interface IClientGetInstalledCertificateIdsRequestHandler {

@@ -29,9 +29,9 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.dataTypes.enums.BootReasonEnumType;
-import extrawest.ocpp.model.request.BootNotificationRequest;
-import extrawest.ocpp.model.dataTypes.ChargingStationType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.BootReasonEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.BootNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ChargingStationType;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;

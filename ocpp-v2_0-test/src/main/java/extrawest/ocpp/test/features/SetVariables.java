@@ -28,14 +28,14 @@ package extrawest.ocpp.test.features;
 import static extrawest.ocpp.utilities.TestUtilities.aList;
 
 import extrawest.ocpp.features.client.SetVariablesFeature;
-import extrawest.ocpp.features.client.handlers.IClientSetVariablesRequestHandler;
-import extrawest.ocpp.model.dataTypes.ComponentType;
-import extrawest.ocpp.model.dataTypes.SetVariableDataType;
-import extrawest.ocpp.model.dataTypes.SetVariableResultType;
-import extrawest.ocpp.model.dataTypes.VariableType;
-import extrawest.ocpp.model.response.SetVariablesResponse;
-import extrawest.ocpp.model.dataTypes.enums.SetVariableStatusEnumType;
-import extrawest.ocpp.model.request.SetVariablesRequest;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientSetVariablesRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ComponentType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.SetVariableDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.SetVariableResultType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.VariableType;
+import com.extrawest.ocpp_2_0_1.model.response.SetVariablesResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.SetVariableStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.SetVariablesRequest;
 
 public class SetVariables implements IClientSetVariablesRequestHandler {
   private SetVariablesFeature feature;

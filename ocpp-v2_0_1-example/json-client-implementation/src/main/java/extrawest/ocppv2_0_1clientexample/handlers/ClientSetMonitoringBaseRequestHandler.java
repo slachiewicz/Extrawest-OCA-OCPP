@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientSetMonitoringBaseRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
-import extrawest.ocpp.model.request.SetMonitoringBaseRequest;
-import extrawest.ocpp.model.response.SetMonitoringBaseResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientSetMonitoringBaseRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.SetMonitoringBaseRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SetMonitoringBaseResponse;
 
 public class ClientSetMonitoringBaseRequestHandler implements IClientSetMonitoringBaseRequestHandler {
     @Override

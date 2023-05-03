@@ -3,9 +3,9 @@ package extrawest.ocpp.model.dataTypes;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.model.dataTypes.enums.ChargingLimitSourceEnumType;
-import extrawest.ocpp.model.dataTypes.enums.ChargingProfilePurposeEnumType;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ChargingLimitSourceEnumType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ChargingProfilePurposeEnumType;
 import lombok.*;
 
 import java.util.List;

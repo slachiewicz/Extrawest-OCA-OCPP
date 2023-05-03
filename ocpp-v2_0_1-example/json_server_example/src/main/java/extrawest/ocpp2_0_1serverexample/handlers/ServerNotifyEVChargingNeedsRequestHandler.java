@@ -1,9 +1,9 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerNotifyEVChargingNeedsRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.NotifyEVChargingNeedsStatusEnumType;
-import extrawest.ocpp.model.request.NotifyEVChargingNeedsRequest;
-import extrawest.ocpp.model.response.NotifyEVChargingNeedsResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerNotifyEVChargingNeedsRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.NotifyEVChargingNeedsStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyEVChargingNeedsRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyEVChargingNeedsResponse;
 
 import java.util.UUID;
 

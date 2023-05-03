@@ -25,7 +25,7 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.SessionInformation;
+import com.extrawest.common.modelSessionInformation;
 import extrawest.ocpp.wss.WssFactoryBuilder;
 import java.net.ConnectException;
 import java.net.InetSocketAddress;

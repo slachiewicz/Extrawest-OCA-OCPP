@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.server;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.server.handlers.IServerMeterValuesRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.MeterValuesRequest;
-import extrawest.ocpp.model.response.MeterValuesResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerMeterValuesRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.MeterValuesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.MeterValuesResponse;
 
 import java.util.UUID;
 

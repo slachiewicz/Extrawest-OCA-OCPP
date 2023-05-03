@@ -26,14 +26,14 @@ package extrawest.ocpp.test.features;
    SOFTWARE.
 */
 
-import extrawest.ocpp.feature.Feature;
+import com.extrawest.common.feature.Feature;
 import extrawest.ocpp.features.server.BootNotificationFeature;
-import extrawest.ocpp.features.server.handlers.IServerBootNotificationRequestHandler;
-import extrawest.ocpp.model.response.BootNotificationResponse;
-import extrawest.ocpp.model.dataTypes.enums.BootReasonEnumType;
-import extrawest.ocpp.model.dataTypes.enums.RegistrationStatusEnumType;
-import extrawest.ocpp.model.request.BootNotificationRequest;
-import extrawest.ocpp.model.dataTypes.ChargingStationType;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerBootNotificationRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.response.BootNotificationResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.BootReasonEnumType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.RegistrationStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.BootNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ChargingStationType;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;

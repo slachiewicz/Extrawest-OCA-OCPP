@@ -27,11 +27,11 @@ package extrawest.ocpp.model.response;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.enums.RegistrationStatusEnumType;
-import extrawest.ocpp.model.request.BootNotificationRequest;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.RegistrationStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.BootNotificationRequest;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;

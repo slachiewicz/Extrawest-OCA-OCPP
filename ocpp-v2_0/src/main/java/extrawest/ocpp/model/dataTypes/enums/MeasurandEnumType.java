@@ -3,7 +3,7 @@ package extrawest.ocpp.model.dataTypes.enums;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import static extrawest.ocpp.util.EnumUtil.findByField;
+import static com.extrawest.ocpp_2_0_1.util.EnumUtil.findByField;
 
 /**
  * Sampled_ Value. Measurand. Measurand_ Code

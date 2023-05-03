@@ -2,8 +2,8 @@ package extrawest.ocpp.model.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
-import extrawest.ocpp.model.RequestWithId;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
+import com.extrawest.common.model.RequestWithId;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
 import lombok.*;
 
 @Getter

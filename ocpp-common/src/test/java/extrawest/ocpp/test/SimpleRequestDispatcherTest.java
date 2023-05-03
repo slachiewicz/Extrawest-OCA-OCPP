@@ -33,7 +33,7 @@ import static org.mockito.Mockito.when;
 import extrawest.ocpp.SessionEvents;
 import extrawest.ocpp.SimplePromiseFulfiller;
 import extrawest.ocpp.UnsupportedFeatureException;
-import extrawest.ocpp.model.Confirmation;
+import com.extrawest.common.model.Confirmation;
 import java.util.concurrent.CompletableFuture;
 import org.junit.Test;
 import org.junit.runner.RunWith;

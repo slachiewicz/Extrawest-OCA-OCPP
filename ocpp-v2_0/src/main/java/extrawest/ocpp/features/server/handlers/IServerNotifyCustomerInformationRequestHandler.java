@@ -1,8 +1,8 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.AuthorizeRequest;
-import extrawest.ocpp.model.request.NotifyCustomerInformationRequest;
-import extrawest.ocpp.model.response.NotifyCustomerInformationResponse;
+import com.extrawest.ocpp_2_0_1.model.request.AuthorizeRequest;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyCustomerInformationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyCustomerInformationResponse;
 
 import java.util.UUID;
 

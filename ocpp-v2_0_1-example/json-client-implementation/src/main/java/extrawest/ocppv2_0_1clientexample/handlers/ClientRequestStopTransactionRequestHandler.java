@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientRequestStopTransactionRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.RequestStartStopStatusEnumType;
-import extrawest.ocpp.model.request.RequestStopTransactionRequest;
-import extrawest.ocpp.model.response.RequestStopTransactionResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientRequestStopTransactionRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.RequestStartStopStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.RequestStopTransactionRequest;
+import com.extrawest.ocpp_2_0_1.model.response.RequestStopTransactionResponse;
 
 public class ClientRequestStopTransactionRequestHandler implements IClientRequestStopTransactionRequestHandler {
     @Override

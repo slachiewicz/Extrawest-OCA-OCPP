@@ -25,11 +25,11 @@ package extrawest.ocpp.model.dataTypes;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.model.validation.OCPP2PrimDatatypes;
-import extrawest.ocpp.model.validation.Validator;
-import extrawest.ocpp.model.validation.ValidatorBuilder;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.ocpp_2_0_1.model.validation.OCPP2PrimDatatypes;
+import com.extrawest.common.model.validation.Validator;
+import com.extrawest.common.model.validation.ValidatorBuilder;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -38,13 +38,13 @@ import java.util.Objects;
 @Getter
 @NoArgsConstructor
 public class ChargingStationType implements Validatable {
-  private transient Validator serialNumberValidator =
+  private final transient Validator serialNumberValidator =
       new ValidatorBuilder().addRule(OCPP2PrimDatatypes.string20()).build();
-  private transient Validator modelValidator =
+  private final transient Validator modelValidator =
       new ValidatorBuilder().setRequired(true).addRule(OCPP2PrimDatatypes.string20()).build();
-  private transient Validator vendorNameValidator =
+  private final transient Validator vendorNameValidator =
       new ValidatorBuilder().setRequired(true).addRule(OCPP2PrimDatatypes.string50()).build();
-  private transient Validator firmwareVersionValidator =
+  private final transient Validator firmwareVersionValidator =
       new ValidatorBuilder().addRule(OCPP2PrimDatatypes.string50()).build();
 
   private String serialNumber;

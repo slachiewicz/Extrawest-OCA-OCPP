@@ -28,8 +28,8 @@ package extrawest.ocpp.model.dataTypes;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.Getter;
 
 import java.util.Objects;

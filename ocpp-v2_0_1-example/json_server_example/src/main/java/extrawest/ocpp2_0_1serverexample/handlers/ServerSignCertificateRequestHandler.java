@@ -1,9 +1,9 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerSignCertificateRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GenericStatusEnumType;
-import extrawest.ocpp.model.request.SignCertificateRequest;
-import extrawest.ocpp.model.response.SignCertificateResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerSignCertificateRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.SignCertificateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SignCertificateResponse;
 
 import java.util.UUID;
 

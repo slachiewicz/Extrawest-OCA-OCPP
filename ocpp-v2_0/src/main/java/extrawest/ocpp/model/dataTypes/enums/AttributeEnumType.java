@@ -27,9 +27,9 @@ package extrawest.ocpp.model.dataTypes.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import extrawest.ocpp.model.dataTypes.GetVariableDataType;
-import extrawest.ocpp.model.dataTypes.SetVariableDataType;
-import extrawest.ocpp.util.EnumUtil;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.SetVariableDataType;
+import com.extrawest.ocpp_2_0_1.util.EnumUtil;
 
 /** AttributeEnumType is used by {@link SetVariableDataType}, {@link GetVariableDataType} */
 public enum AttributeEnumType {

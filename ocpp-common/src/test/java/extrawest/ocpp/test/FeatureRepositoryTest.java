@@ -5,11 +5,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import extrawest.ocpp.FeatureRepository;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.TestConfirmation;
-import extrawest.ocpp.model.TestRequest;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.modelTestConfirmation;
+import com.extrawest.common.modelTestRequest;
 import java.util.Optional;
 import java.util.UUID;
 import org.junit.Test;

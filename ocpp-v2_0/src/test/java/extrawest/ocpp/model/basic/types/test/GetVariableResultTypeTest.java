@@ -28,10 +28,10 @@ package extrawest.ocpp.model.basic.types.test;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import extrawest.ocpp.model.dataTypes.ComponentType;
-import extrawest.ocpp.model.dataTypes.GetVariableResultType;
-import extrawest.ocpp.model.dataTypes.enums.GetVariableStatusEnumType;
-import extrawest.ocpp.model.dataTypes.VariableType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ComponentType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableResultType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GetVariableStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.VariableType;
 import org.junit.Assert;
 import org.junit.Test;
 

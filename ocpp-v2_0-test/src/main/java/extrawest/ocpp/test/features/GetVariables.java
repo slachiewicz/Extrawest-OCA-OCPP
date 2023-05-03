@@ -28,14 +28,14 @@ package extrawest.ocpp.test.features;
 import static extrawest.ocpp.utilities.TestUtilities.aList;
 
 import extrawest.ocpp.features.client.GetVariablesFeature;
-import extrawest.ocpp.features.client.handlers.IClientGetVariablesRequestHandler;
-import extrawest.ocpp.model.dataTypes.ComponentType;
-import extrawest.ocpp.model.dataTypes.GetVariableDataType;
-import extrawest.ocpp.model.dataTypes.GetVariableResultType;
-import extrawest.ocpp.model.dataTypes.VariableType;
-import extrawest.ocpp.model.response.GetVariablesResponse;
-import extrawest.ocpp.model.dataTypes.enums.GetVariableStatusEnumType;
-import extrawest.ocpp.model.request.GetVariablesRequest;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientGetVariablesRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ComponentType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.GetVariableResultType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.VariableType;
+import com.extrawest.ocpp_2_0_1.model.response.GetVariablesResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GetVariableStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.GetVariablesRequest;
 
 public class GetVariables implements IClientGetVariablesRequestHandler {
   private GetVariablesFeature feature;

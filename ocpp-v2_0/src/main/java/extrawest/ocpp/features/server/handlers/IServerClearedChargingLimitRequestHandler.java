@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.ClearedChargingLimitRequest;
-import extrawest.ocpp.model.response.ClearedChargingLimitResponse;
+import com.extrawest.ocpp_2_0_1.model.request.ClearedChargingLimitRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ClearedChargingLimitResponse;
 
 import java.util.UUID;
 

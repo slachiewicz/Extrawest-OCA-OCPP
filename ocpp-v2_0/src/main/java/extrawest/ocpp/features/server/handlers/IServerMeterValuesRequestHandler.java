@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.MeterValuesRequest;
-import extrawest.ocpp.model.response.MeterValuesResponse;
+import com.extrawest.ocpp_2_0_1.model.request.MeterValuesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.MeterValuesResponse;
 
 import java.util.UUID;
 

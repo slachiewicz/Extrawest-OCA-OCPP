@@ -1,8 +1,8 @@
 package extrawest.ocpp.model.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.GetDisplayMessagesRequest;
-import extrawest.ocpp.model.response.GetDisplayMessagesResponse;
+import com.extrawest.ocpp_2_0_1.model.request.GetDisplayMessagesRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetDisplayMessagesResponse;
 
 /** Charging Station handler of {@link GetDisplayMessagesRequest} */
 public interface IClientGetDisplayMessagesRequestHandler {

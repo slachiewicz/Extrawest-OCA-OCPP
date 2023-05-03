@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.CostUpdatedRequest;
-import extrawest.ocpp.model.response.CostUpdatedResponse;
+import com.extrawest.ocpp_2_0_1.
+        com.extrawest.ocpp_2_0_1.model.response.CostUpdatedResponse;
 
 /** Charging Station handler of {@link CostUpdatedRequest} */
 public interface IClientCostUpdatedRequestHandler {

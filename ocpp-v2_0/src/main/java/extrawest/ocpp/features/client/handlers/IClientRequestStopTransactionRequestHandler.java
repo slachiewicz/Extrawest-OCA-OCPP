@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.RequestStopTransactionRequest;
-import extrawest.ocpp.model.response.RequestStopTransactionResponse;
+import com.extrawest.ocpp_2_0_1.model.request.RequestStopTransactionRequest;
+import com.extrawest.ocpp_2_0_1.model.response.RequestStopTransactionResponse;
 
 /** Charging Station handler of {@link RequestStopTransactionRequest} */
 public interface IClientRequestStopTransactionRequestHandler {

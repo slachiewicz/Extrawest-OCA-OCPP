@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientDeleteCertificateRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.DeleteCertificateStatusEnumType;
-import extrawest.ocpp.model.request.DeleteCertificateRequest;
-import extrawest.ocpp.model.response.DeleteCertificateResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientDeleteCertificateRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.DeleteCertificateStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.DeleteCertificateRequest;
+import com.extrawest.ocpp_2_0_1.model.response.DeleteCertificateResponse;
 
 public class ClientDeleteCertificateRequestHandler implements IClientDeleteCertificateRequestHandler {
     @Override

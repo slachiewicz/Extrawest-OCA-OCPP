@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.SetVariableMonitoringRequest;
-import extrawest.ocpp.model.response.SetVariableMonitoringResponse;
+import com.extrawest.ocpp_2_0_1.model.request.SetVariableMonitoringRequest;
+import com.extrawest.ocpp_2_0_1.model.response.SetVariableMonitoringResponse;
 
 /** Charging Station handler of {@link SetVariableMonitoringRequest} */
 public interface IClientSetVariableMonitoringRequestHandler {

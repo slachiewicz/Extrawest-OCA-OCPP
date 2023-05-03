@@ -1,8 +1,8 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.features.server.handlers.IServerHeartbeatRequestHandler;
-import extrawest.ocpp.model.request.HeartbeatRequest;
-import extrawest.ocpp.model.response.HeartbeatResponse;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerHeartbeatRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.request.HeartbeatRequest;
+import com.extrawest.ocpp_2_0_1.model.response.HeartbeatResponse;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientTriggerMessageRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.TriggerMessageStatusEnumType;
-import extrawest.ocpp.model.request.TriggerMessageRequest;
-import extrawest.ocpp.model.response.TriggerMessageResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientTriggerMessageRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.TriggerMessageStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.TriggerMessageRequest;
+import com.extrawest.ocpp_2_0_1.model.response.TriggerMessageResponse;
 
 public class ClientTriggerMessageRequestHandler implements IClientTriggerMessageRequestHandler {
     @Override

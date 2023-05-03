@@ -1,8 +1,8 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientGetTransactionStatusRequestHandler;
-import extrawest.ocpp.model.request.GetTransactionStatusRequest;
-import extrawest.ocpp.model.response.GetTransactionStatusResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientGetTransactionStatusRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.request.GetTransactionStatusRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetTransactionStatusResponse;
 
 public class ClientGetTransactionStatusRequestHandler implements IClientGetTransactionStatusRequestHandler {
     @Override

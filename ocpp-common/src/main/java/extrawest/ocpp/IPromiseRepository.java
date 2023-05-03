@@ -25,7 +25,7 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
+import com.extrawest.common.model.Confirmation;
 
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;

@@ -1,11 +1,11 @@
 package extrawest.ocpp.model.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
-import extrawest.ocpp.model.dataTypes.StatusInfoType;
-import extrawest.ocpp.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.StatusInfoType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

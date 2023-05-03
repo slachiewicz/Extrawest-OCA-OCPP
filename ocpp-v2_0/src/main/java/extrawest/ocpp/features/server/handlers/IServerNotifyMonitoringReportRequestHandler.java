@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.server.handlers;
 
-import extrawest.ocpp.model.request.NotifyMonitoringReportRequest;
-import extrawest.ocpp.model.response.NotifyMonitoringReportResponse;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyMonitoringReportRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyMonitoringReportResponse;
 
 import java.util.UUID;
 

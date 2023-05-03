@@ -1,12 +1,12 @@
 package extrawest.ocpp.features.server;
 
-import extrawest.ocpp.constants.FeatureConstants;
-import extrawest.ocpp.feature.Feature;
-import extrawest.ocpp.features.server.handlers.IServerNotifyEVChargingNeedsRequestHandler;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.model.request.NotifyEVChargingNeedsRequest;
-import extrawest.ocpp.model.response.NotifyEVChargingNeedsResponse;
+import com.extrawest.ocpp_2_0_1.constants.FeatureConstants;
+import com.extrawest.common.feature.Feature;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerNotifyEVChargingNeedsRequestHandler;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
+import com.extrawest.ocpp_2_0_1.model.request.NotifyEVChargingNeedsRequest;
+import com.extrawest.ocpp_2_0_1.model.response.NotifyEVChargingNeedsResponse;
 
 import java.util.UUID;
 

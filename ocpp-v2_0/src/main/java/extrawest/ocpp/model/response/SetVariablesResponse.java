@@ -26,11 +26,11 @@ package extrawest.ocpp.model.response;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.SetVariableResultType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.model.validation.Validator;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.SetVariableResultType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.model.validation.Validator;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.NoArgsConstructor;
 
 import java.util.Arrays;

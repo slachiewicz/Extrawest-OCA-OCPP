@@ -26,10 +26,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import extrawest.ocpp.feature.Feature;
+import com.extrawest.common.feature.Feature;
 import extrawest.ocpp.feature.ProfileFeature;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.common.model.Request;
 
 import java.util.UUID;
 

@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientGetMonitoringReportRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
-import extrawest.ocpp.model.request.GetMonitoringReportRequest;
-import extrawest.ocpp.model.response.GetMonitoringReportResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientGetMonitoringReportRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GenericDeviceModelStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.GetMonitoringReportRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetMonitoringReportResponse;
 
 public class ClientGetMonitoringReportRequestHandler implements IClientGetMonitoringReportRequestHandler {
     @Override

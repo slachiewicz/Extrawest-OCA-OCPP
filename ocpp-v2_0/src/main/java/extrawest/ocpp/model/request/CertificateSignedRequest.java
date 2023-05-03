@@ -3,12 +3,12 @@ package extrawest.ocpp.model.request;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.RequestWithId;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
-import extrawest.ocpp.model.dataTypes.enums.CertificateSigningUseEnumType;
-import extrawest.ocpp.model.validation.OCPP2PrimDatatypes;
-import extrawest.ocpp.model.validation.Validator;
-import extrawest.ocpp.model.validation.ValidatorBuilder;
+import com.extrawest.common.model.RequestWithId;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.CertificateSigningUseEnumType;
+import com.extrawest.ocpp_2_0_1.model.validation.OCPP2PrimDatatypes;
+import com.extrawest.common.model.validation.Validator;
+import com.extrawest.common.model.validation.ValidatorBuilder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +26,7 @@ import lombok.ToString;
 @NoArgsConstructor
 public class CertificateSignedRequest extends RequestWithId {
 
-    private transient Validator certificateChainValidator =
+    private final transient Validator certificateChainValidator =
             new ValidatorBuilder().setRequired(true).addRule(OCPP2PrimDatatypes.string10000()).build();
 
     /**

@@ -5,7 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 
 import extrawest.ocpp.Queue;
-import extrawest.ocpp.model.Request;
+import com.extrawest.common.model.Request;
 import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;

@@ -25,13 +25,13 @@ package extrawest.ocpp.model.dataTypes;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.Validatable;
-import extrawest.ocpp.model.response.SetVariablesResponse;
-import extrawest.ocpp.model.dataTypes.enums.AttributeEnumType;
-import extrawest.ocpp.model.dataTypes.enums.SetVariableStatusEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.model.validation.Validator;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Validatable;
+import com.extrawest.ocpp_2_0_1.model.response.SetVariablesResponse;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.AttributeEnumType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.SetVariableStatusEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.model.validation.Validator;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -43,7 +43,7 @@ import java.util.Objects;
 @Getter
 @NoArgsConstructor
 public class SetVariableResultType implements Validatable {
-  private transient Validator<Object> requiredValidator = new RequiredValidator();
+  private final transient Validator<Object> requiredValidator = new RequiredValidator();
 
   private AttributeEnumType attributeType;
   private SetVariableStatusEnumType attributeStatus;

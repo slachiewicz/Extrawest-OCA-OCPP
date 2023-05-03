@@ -25,10 +25,10 @@ package extrawest.ocpp.model.request;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.RequestWithId;
-import extrawest.ocpp.model.dataTypes.enums.ConnectorStatusEnumType;
-import extrawest.ocpp.model.validation.RequiredValidator;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.RequestWithId;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ConnectorStatusEnumType;
+import com.extrawest.common.model.validation.RequiredValidator;
+import com.extrawest.common.utilities.MoreObjects;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;

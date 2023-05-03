@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientCustomerInformationRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.CustomerInformationStatusEnumType;
-import extrawest.ocpp.model.request.CustomerInformationRequest;
-import extrawest.ocpp.model.response.CustomerInformationResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientCustomerInformationRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.CustomerInformationStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.CustomerInformationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.CustomerInformationResponse;
 
 public class ClientCustomerInformationRequestHandler implements IClientCustomerInformationRequestHandler {
     @Override

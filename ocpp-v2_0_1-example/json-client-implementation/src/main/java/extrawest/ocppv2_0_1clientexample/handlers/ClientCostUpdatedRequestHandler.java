@@ -1,8 +1,8 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientCostUpdatedRequestHandler;
-import extrawest.ocpp.model.request.CostUpdatedRequest;
-import extrawest.ocpp.model.response.CostUpdatedResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientCostUpdatedRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.request.CostUpdatedRequest;
+import com.extrawest.ocpp_2_0_1.model.response.CostUpdatedResponse;
 
 public class ClientCostUpdatedRequestHandler implements IClientCostUpdatedRequestHandler {
     @Override

@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientCertificateSignedRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.CertificateSignedStatusEnumType;
-import extrawest.ocpp.model.request.CertificateSignedRequest;
-import extrawest.ocpp.model.response.CertificateSignedResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientCertificateSignedRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.CertificateSignedStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.CertificateSignedRequest;
+import com.extrawest.ocpp_2_0_1.model.response.CertificateSignedResponse;
 
 public class ClientCertificateSignedRequestHandler implements IClientCertificateSignedRequestHandler {
     @Override

@@ -1,10 +1,10 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientClearVariableMonitoringRequestHandler;
-import extrawest.ocpp.model.dataTypes.ClearMonitoringResultType;
-import extrawest.ocpp.model.dataTypes.enums.ClearMonitoringStatusEnumType;
-import extrawest.ocpp.model.request.ClearVariableMonitoringRequest;
-import extrawest.ocpp.model.response.ClearVariableMonitoringResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientClearVariableMonitoringRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ClearMonitoringResultType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ClearMonitoringStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.ClearVariableMonitoringRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ClearVariableMonitoringResponse;
 
 import java.util.ArrayList;
 import java.util.List;

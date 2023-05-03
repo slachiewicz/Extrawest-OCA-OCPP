@@ -30,8 +30,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.dataTypes.ChargingStationType;
-import extrawest.ocpp.model.dataTypes.ModemType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ChargingStationType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.ModemType;
 import extrawest.ocpp.utilities.TestUtilities;
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 package extrawest.ocpp;
 
-import extrawest.ocpp.model.Request;
-import extrawest.ocpp.utilities.MoreObjects;
+import com.extrawest.common.model.Request;
+import com.extrawest.common.utilities.MoreObjects;
 import extrawest.ocpp.utilities.Stopwatch;
 import java.util.Map;
 import java.util.Optional;

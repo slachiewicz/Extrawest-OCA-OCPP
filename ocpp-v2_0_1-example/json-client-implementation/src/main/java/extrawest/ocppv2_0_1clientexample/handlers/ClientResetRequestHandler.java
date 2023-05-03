@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientResetRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.ResetStatusEnumType;
-import extrawest.ocpp.model.request.ResetRequest;
-import extrawest.ocpp.model.response.ResetResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientResetRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ResetStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.ResetRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ResetResponse;
 
 public class ClientResetRequestHandler implements IClientResetRequestHandler {
     @Override

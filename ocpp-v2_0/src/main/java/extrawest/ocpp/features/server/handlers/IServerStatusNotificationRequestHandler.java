@@ -25,8 +25,8 @@ package extrawest.ocpp.features.server.handlers;
    SOFTWARE.
 */
 
-import extrawest.ocpp.model.response.StatusNotificationResponse;
-import extrawest.ocpp.model.request.StatusNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.response.StatusNotificationResponse;
+import com.extrawest.ocpp_2_0_1.model.request.StatusNotificationRequest;
 import java.util.UUID;
 
 /** Central system handler of {@link StatusNotificationRequest}s. */

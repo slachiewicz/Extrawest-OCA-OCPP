@@ -1,7 +1,7 @@
 package extrawest.ocpp.features.client.handlers;
 
-import extrawest.ocpp.model.request.CertificateSignedRequest;
-import extrawest.ocpp.model.response.CertificateSignedResponse;
+import com.extrawest.ocpp_2_0_1.model.request.CertificateSignedRequest;
+import com.extrawest.ocpp_2_0_1.model.response.CertificateSignedResponse;
 
 /** Charging Station handler of {@link CertificateSignedRequest} */
 public interface IClientCertificateSignedRequestHandler {

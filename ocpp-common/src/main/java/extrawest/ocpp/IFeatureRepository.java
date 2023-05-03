@@ -25,7 +25,7 @@ package extrawest.ocpp;
    SOFTWARE.
 */
 
-import extrawest.ocpp.feature.Feature;
+import com.extrawest.common.feature.Feature;
 
 import java.util.Optional;
 

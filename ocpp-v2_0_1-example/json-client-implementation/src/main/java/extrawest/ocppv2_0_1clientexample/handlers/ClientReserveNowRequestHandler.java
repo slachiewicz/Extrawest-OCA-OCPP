@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientReserveNowRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.ReserveNowStatusEnumType;
-import extrawest.ocpp.model.request.ReserveNowRequest;
-import extrawest.ocpp.model.response.ReserveNowResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientReserveNowRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ReserveNowStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.ReserveNowRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ReserveNowResponse;
 
 public class ClientReserveNowRequestHandler implements IClientReserveNowRequestHandler {
     @Override

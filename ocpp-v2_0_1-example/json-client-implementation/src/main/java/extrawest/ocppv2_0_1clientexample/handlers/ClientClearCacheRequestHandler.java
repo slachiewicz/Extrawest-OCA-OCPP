@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientClearCacheRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.ClearCacheStatusEnumType;
-import extrawest.ocpp.model.request.ClearCacheRequest;
-import extrawest.ocpp.model.response.ClearCacheResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientClearCacheRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ClearCacheStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.ClearCacheRequest;
+import com.extrawest.ocpp_2_0_1.model.response.ClearCacheResponse;
 
 public class ClientClearCacheRequestHandler implements IClientClearCacheRequestHandler {
     @Override

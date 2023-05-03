@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientUnpublishFirmwareRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.UnpublishFirmwareStatusEnumType;
-import extrawest.ocpp.model.request.UnpublishFirmwareRequest;
-import extrawest.ocpp.model.response.UnpublishFirmwareResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientUnpublishFirmwareRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.UnpublishFirmwareStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.UnpublishFirmwareRequest;
+import com.extrawest.ocpp_2_0_1.model.response.UnpublishFirmwareResponse;
 
 public class ClientUnpublishFirmwareRequestHandler implements IClientUnpublishFirmwareRequestHandler {
     @Override

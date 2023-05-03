@@ -3,10 +3,10 @@ package extrawest.ocpp.model.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import extrawest.ocpp.model.Confirmation;
-import extrawest.ocpp.model.dataTypes.CustomDataType;
-import extrawest.ocpp.model.dataTypes.IdTokenInfoType;
-import extrawest.ocpp.model.dataTypes.MessageContentType;
+import com.extrawest.common.model.Confirmation;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.CustomDataType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.IdTokenInfoType;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.MessageContentType;
 import lombok.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)

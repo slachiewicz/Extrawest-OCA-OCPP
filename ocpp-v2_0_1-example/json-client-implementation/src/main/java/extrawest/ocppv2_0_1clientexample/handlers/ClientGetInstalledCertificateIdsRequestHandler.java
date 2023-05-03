@@ -1,9 +1,9 @@
 package extrawest.ocppv2_0_1clientexample.handlers;
 
-import extrawest.ocpp.features.client.handlers.IClientGetInstalledCertificateIdsRequestHandler;
-import extrawest.ocpp.model.dataTypes.enums.GetInstalledCertificateStatusEnumType;
-import extrawest.ocpp.model.request.GetInstalledCertificateIdsRequest;
-import extrawest.ocpp.model.response.GetInstalledCertificateIdsResponse;
+import com.extrawest.ocpp_2_0_1.features.client.handlers.IClientGetInstalledCertificateIdsRequestHandler;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.GetInstalledCertificateStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.GetInstalledCertificateIdsRequest;
+import com.extrawest.ocpp_2_0_1.model.response.GetInstalledCertificateIdsResponse;
 
 public class ClientGetInstalledCertificateIdsRequestHandler implements IClientGetInstalledCertificateIdsRequestHandler {
     @Override

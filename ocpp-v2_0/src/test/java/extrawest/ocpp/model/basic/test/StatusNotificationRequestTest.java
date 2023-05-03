@@ -26,8 +26,8 @@ package extrawest.ocpp.model.basic.test;
 */
 
 import extrawest.ocpp.PropertyConstraintException;
-import extrawest.ocpp.model.request.StatusNotificationRequest;
-import extrawest.ocpp.model.dataTypes.enums.ConnectorStatusEnumType;
+import com.extrawest.ocpp_2_0_1.model.request.StatusNotificationRequest;
+import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.ConnectorStatusEnumType;
 
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
