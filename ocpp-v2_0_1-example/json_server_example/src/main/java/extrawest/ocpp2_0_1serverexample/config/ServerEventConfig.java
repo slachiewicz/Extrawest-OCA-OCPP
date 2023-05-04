@@ -1,8 +1,8 @@
 package extrawest.ocpp2_0_1serverexample.config;
 
-import extrawest.ocpp.AuthenticationException;
-import extrawest.ocpp.ServerEvents;
-import com.extrawest.common.modelSessionInformation;
+import com.extrawest.common.AuthenticationException;
+import com.extrawest.common.ServerEvents;
+import com.extrawest.common.model.SessionInformation;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;

@@ -1,10 +1,10 @@
 package extrawest.ocpp2_0_1serverexample.handlers;
 
-import extrawest.ocpp.JSONServer;
-import extrawest.ocpp.NotConnectedException;
-import extrawest.ocpp.OccurenceConstraintException;
-import extrawest.ocpp.UnsupportedFeatureException;
-import extrawest.ocpp.features.server.handlers.*;
+import com.extrawest.common.NotConnectedException;
+import com.extrawest.common.OccurenceConstraintException;
+import com.extrawest.common.UnsupportedFeatureException;
+import com.extrawest.ocpp_2_0_1.JSONServer;
+import com.extrawest.ocpp_2_0_1.features.server.handlers.IServerAuthorizeRequestHandler;
 import com.extrawest.ocpp_2_0_1.model.dataTypes.*;
 import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.*;
 import com.extrawest.ocpp_2_0_1.model.request.*;

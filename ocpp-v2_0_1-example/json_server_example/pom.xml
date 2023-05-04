@@ -18,12 +18,6 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>eu.chargetime.ocpp</groupId>
-            <artifactId>v2_0</artifactId>
-            <version>1.0.2</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
@@ -32,6 +26,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.extrawest</groupId>
+            <artifactId>OCPP-OCPA-v2_0_1</artifactId>
+            <version>1.1</version>
         </dependency>
     </dependencies>
 

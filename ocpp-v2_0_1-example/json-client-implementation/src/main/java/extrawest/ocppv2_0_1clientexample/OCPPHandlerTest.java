@@ -1,8 +1,8 @@
 package extrawest.ocppv2_0_1clientexample;
 
-import extrawest.ocpp.JSONClient;
-import extrawest.ocpp.OccurenceConstraintException;
-import extrawest.ocpp.UnsupportedFeatureException;
+import com.extrawest.common.OccurenceConstraintException;
+import com.extrawest.common.UnsupportedFeatureException;
+import com.extrawest.ocpp_2_0_1.JSONClient;
 import com.extrawest.ocpp_2_0_1.model.dataTypes.*;
 import com.extrawest.ocpp_2_0_1.model.dataTypes.enums.*;
 import com.extrawest.ocpp_2_0_1.model.request.*;
@@ -287,7 +287,7 @@ public class OCPPHandlerTest {
                 System.out.println("");
             }
         } catch (OccurenceConstraintException | UnsupportedFeatureException
-                | ExecutionException | InterruptedException e) {
+                 | ExecutionException | InterruptedException e) {
             log.error("Exception occurred: " + e);
             log.error("Test will fail");
         }

@@ -1,7 +1,7 @@
 package extrawest.ocpp2_0_1serverexample.config;
 
-import extrawest.ocpp.JSONServer;
-import extrawest.ocpp.ServerEvents;
+import com.extrawest.common.ServerEvents;
+import com.extrawest.ocpp_2_0_1.JSONServer;
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

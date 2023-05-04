@@ -1,8 +1,8 @@
 package extrawest.ocpp2_0_1serverexample.config;
 
-import extrawest.ocpp.JSONServer;
-import extrawest.ocpp.features.client.*;
-import extrawest.ocpp.features.server.*;
+import com.extrawest.ocpp_2_0_1.JSONServer;
+import com.extrawest.ocpp_2_0_1.features.client.*;
+import com.extrawest.ocpp_2_0_1.features.server.*;
 import extrawest.ocpp2_0_1serverexample.handlers.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;

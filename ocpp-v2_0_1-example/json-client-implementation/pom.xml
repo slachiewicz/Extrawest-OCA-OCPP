@@ -28,9 +28,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>eu.chargetime.ocpp</groupId>
-            <artifactId>v2_0</artifactId>
-            <version>1.0.2</version>
+            <groupId>com.extrawest</groupId>
+            <artifactId>OCPP-OCPA-v2_0_1</artifactId>
+            <version>1.1</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
